@@ -1,0 +1,439 @@
+﻿/**
+ * @author  ( Angie Radtke  )
+ * @package Joomla
+ * @subpackage Accessible-Template-Beez
+ * @copyright Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant to the
+ * GNU General Public License, and as distributed it includes or is derivative
+ * of works licensed under the GNU General Public License or other free or open
+ * source software licenses. See COPYRIGHT.php for copyright notices and
+ * details.
+	/* Typography =================================================== */
+body#body {
+	font-family: 'Montserrat', sans-serif;
+	width:100%;
+	margin:0;
+	padding:0;
+	background-color:#f7f7f7;
+}
+
+body h1,body h2,body h3,body h4,body h5,body h6 {
+	margin: 0;
+	font-family: inherit;
+	font-weight: normal;
+	color: inherit;
+	text-rendering: optimizelegibility;
+	word-wrap: break-word;
+}
+
+div#all{
+	margin:0 auto;
+	position:relative;
+	background-color:#fff;
+}
+
+/********** HEADER ********************************/
+header{
+	border-bottom:25px solid #231f20;
+	position:relative;
+}
+
+img.logo-header{
+	position:absolute;
+	top:10px;
+}
+
+header h1{
+	text-align:center;
+	font-weight:bold;
+	padding-top:90px;
+	line-height:1.2em;
+}
+
+span.header-location{
+	color:#ffde16;
+	font-size:30px;
+	font-weight:normal !important;
+}
+
+div.custom-social-icons{
+	float:right;
+	margin-top:-130px;
+}
+#map-canvas{
+	height:440px;
+	visibility:hidden;
+	position:absolute;
+}
+#header-mobile{
+	background-color:#231f20;
+	height:125px;
+}
+#header-mobile h1{
+	text-align:center;
+	font-weight:bold;
+	line-height:1.2em;
+	color:#fff;
+	padding:15px 0;
+	font-size:25px;
+}
+#header-mobile span.header-location{
+	color:#ffde16;
+	font-size:20px;
+	font-weight:normal !important;
+	text-align:center;
+}
+
+/********** NAVIGATION ********************************/
+div#main_nav{
+	float:left;
+	z-index:10;
+}
+.nav-pills>li{
+	float:none !important;
+}
+.navbar-default{
+	background-color:transparent !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	width:500px;
+	border:none !important;
+	margin-top:45px;
+	margin-left:-405px !important;
+}
+
+.navbar-default .navbar-brand{
+	position:absolute;
+	top:-35px;
+}
+
+.navbar{
+	border:none !important;
+	background-color:none !important;
+}
+
+.nav-pills>li>a{
+	background-color:#231f20 !important;
+	border-radius:0 !important;
+}
+
+/********** CONTENT AREA ********************************/
+div#contentarea{
+	padding-top:10px;
+	position:relative;
+	font-size:15px;
+}
+div#contentarea div.moduletable h3,
+div.custom-teaser-partners h3{
+	font-size:35px;
+}
+#fav-caption.favstyle-bg-dark{
+	width:100% !important;
+}
+
+/********** TEASER BAKER ********************************/
+div.teaser-baker{
+	height:430px;
+	background:url('../../../images/bg_white_yellow.jpg') top left repeat-x;
+}
+div.teaser-baker h1{
+	color:#231f20;
+	text-align:right;
+}
+div.teaser-baker h1 .teaser-date{
+	color:#231f20;
+}
+div.teaser-baker p{
+	color:#5b5b5b;
+	font-size:16px;
+}
+img.baker-teaser-image{
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+/********** TEASER GIMS ********************************/
+div.teaser-gims{
+	height:350px;
+	background:url('../../../images/bg_intervalle.jpg') top left repeat-x;
+	clear:both;
+}
+div.teaser-gims h1{
+	color:#231f20;
+	text-align:right;
+}
+div.teaser-gims h2{
+	color:#ffde16;
+	font-size:30px;
+    -ms-transform:  rotate(340deg); /* IE 9 */
+    -webkit-transform: rotate(340deg); /* Chrome, Safari, Opera */
+    transform: rotate(340deg);
+	position:absolute;
+	bottom:130px;
+}
+
+div.teaser-gims h1 .teaser-date{
+	color:#231f20;
+	font-size:40px;
+}
+div.teaser-gims p{
+	color:#fff;
+	z-index:1;
+	position:relative;
+}
+img.gims-teaser-image{
+	position:absolute;
+	bottom:0;
+	z-index:0;
+}
+
+/********** TEASER PRICE ********************************/
+div.teaser-price{
+
+	background-color:#231f20;
+	clear:both;
+	padding:20px 50px;
+	float:left;
+}
+div.teaser-price h2{
+	color:#ffde16;
+	font-size:20px;
+	margin-bottom:10px;
+}
+div.teaser-price ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+	color:#c4c4c4;
+	float:left !important;
+}
+div.teaser-price ul:nth-child(3){
+	font-weight:bold;
+	float:left;
+	margin-left:50px;
+}
+div[id^="carousel-"].favslider{
+	display:none !important;
+}
+a.buy-tickets-teaser{
+	color:#231f20;
+	display:block;
+	background-color:#ffde16;
+	float:left;
+	height:135px;
+	text-align:center;
+	font-size:24px;
+	padding-top:60px;
+}
+
+/********** FOOTER ********************************/
+footer{
+	background-color:#231f20;
+	height:325px;
+	padding:70px 265px;
+}
+div.moduletable-newsletter-footer h3{
+	color:#ffde16 !important;
+	font-weight:bold;
+	font-size:16px;
+	margin-bottom:10px;
+}
+.acysubbuttons{
+	text-align:left !important;
+}
+.btn-primary{
+	background-color:#ffde16 !important;
+	color:#231f20 !important;
+	border-color:#ffed81 !important;
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) { 
+	div#all{
+		width:360px;
+	}
+	img.logo-header{
+		width:250px;
+	}
+	header{
+		height:200px;
+	}
+	.map-tab{
+		position:absolute;
+		bottom:-150px;
+		cursor:pointer;
+		left:35%;
+	}
+	div#main_nav{
+		margin-top:110px;
+	}
+	.navbar-default .navbar-brand{
+		left:-50px;
+	}
+	div.teaser-baker h1{
+		font-size:40px;
+		padding:10px;
+	}
+	img.baker-teaser-image{
+		width:300px;
+	}
+	div.teaser-gims h1{
+		font-size:40px;
+		padding:20px 10px;
+	}
+	img.gims-teaser-image{
+		width:320px;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	div#all{
+		width:750px;
+	}
+	img.logo-header{
+		width:250px;
+	}
+	header{
+		height:200px;
+	}
+	header h1{
+		font-size:30px;
+	}
+	.map-tab{
+		position:absolute;
+		bottom:-25px;
+		cursor:pointer;
+		left:45%;
+	}
+	div#main_nav{
+		margin-top:-40px;
+	}
+	.navbar-default .navbar-brand{
+		left:-50px;
+	}
+	div#contentarea div.moduletable,
+	div#contentarea div.moduletable-teaser-partners{
+		padding:30px 0 0 50px;
+	}
+	div.teaser-baker h1{
+		font-size:50px;
+		padding:30px;
+	}
+	div.teaser-baker p{
+		padding:0 30px 0 370px;
+		font-size:14px;
+	}
+	img.baker-teaser-image{
+		width:350px;
+	}
+	img.gims-teaser-image{
+		width:340px;
+	}
+	div.teaser-gims h1{
+		padding-top:20px;
+		text-align:left;
+		font-size:55px;
+	}
+	div.teaser-gims p{
+		font-size:14px;
+		padding:75px 20px 0 505px;
+	}
+	div.custom-teaser-partners img{
+		margin:20px 0 30px 20px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	div#all{
+		width:970px;
+	}
+	img.logo-header{
+		left:20px;
+		width:298px;
+	}
+	header{
+		height:230px;
+	}
+	header h1{
+		font-size:38px;
+	}
+	.navbar-default .navbar-brand{
+		left:-32px;
+	}
+	div#contentarea div.moduletable,
+	div#contentarea div.moduletable-teaser-partners{
+		padding:30px 0 0 100px;
+	}
+	div.teaser-gims h1{
+		padding-top:20px;
+		padding-right:550px;
+		text-align:right;
+		font-size:55px;
+	}
+	div.teaser-baker h1{
+		font-size:58px;
+		margin-top:100px;
+		padding-right:20px;
+	}
+	div.teaser-baker h1 .teaser-date{
+		font-size:40px;
+	}
+	div.teaser-baker p{
+		padding:0px 20px 0 380px;
+		font-size:16px;
+	}
+	img.baker-teaser-image{
+		width:436px;
+	}
+	div.teaser-gims p{
+		font-size:15px;
+		padding:75px 20px 0 505px;
+	}
+	img.gims-teaser-image{
+		width:400px;
+	}
+	div.custom-teaser-partners img{
+		margin:20px 0 30px 50px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	div#all{
+		width:1170px;
+	}
+	img.logo-header{
+		left:90px;
+	}
+	.navbar-default .navbar-brand{
+		left:-15px;
+	}
+	div.teaser-baker h1{
+		font-size:62px;
+		margin-top:50px;
+		padding-right:100px;
+	}
+	div.teaser-baker h1 .teaser-date{
+		font-size:40px;
+	}
+	div.teaser-baker p{
+		padding:0px 165px 0 460px;
+	}
+	img.gims-teaser-image{
+		width:440px;
+	}
+	div.teaser-gims h1{
+		padding-top:20px;
+		padding-right:750px;
+		text-align:right;
+		font-size:55px;
+	}
+	div.custom-teaser-partners img{
+		margin:20px 0 30px 100px;
+	}
+}
