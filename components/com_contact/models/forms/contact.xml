@@ -16,6 +16,7 @@
 			size="30"
 			filter="string"
 			required="true"
+			class="form-control"
 		/>
 		<field
 			name="contact_email"
@@ -28,6 +29,7 @@
 			validate="contactemail"
 			autocomplete="email"
 			required="true"
+			class="form-control"
 		/>
 		<field
 			name="contact_subject"
@@ -39,6 +41,7 @@
 			filter="string"
 			validate="contactemailsubject"
 			required="true"
+			class="form-control"
 		/>
 		<field
 			name="contact_message"
@@ -51,6 +54,7 @@
 			filter="safehtml"
 			validate="contactemailmessage"
 			required="true"
+			class="form-control"
 		/>
 		<field
 			name="contact_email_copy"
