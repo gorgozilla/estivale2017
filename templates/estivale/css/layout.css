@@ -264,6 +264,11 @@ div.teaser-price{
 	padding:20px 20px;
 	float:left;
 }
+div.teaser-price a:link,
+div.teaser-price a:visited{
+	color:#ffde16 !important;
+	text-decoration:none;
+}
 div.teaser-price h2{
 	color:#ffde16;
 	font-size:20px;

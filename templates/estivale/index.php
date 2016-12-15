@@ -25,7 +25,8 @@ $this->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/bo
 $this->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/template.js');
 $this->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/bootstrap.min.js');
 JHtml::_('jquery.framework');
-
+$this->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/lightbox.css', 'text/css', 'screen');
+$this->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/lightbox.js');
 $templateparams = $app->getTemplate(true)->params;
 ?>
 <!DOCTYPE html>
@@ -147,11 +148,11 @@ $templateparams = $app->getTemplate(true)->params;
 							<ul class="hidden-xs">
 								<li>Estivale Open Air (28-30.07.17)</li>
 								<li>Abonnement trois jours </li>
-								<li>Abonnement trois jours + un foulard estampillé Estivale</li>
+								<li>Abonnement trois jours + <a href="images/foulard_estivale.jpg" data-lightbox="desk1">un foulard estampillé Estivale</a></li>
 								<li>&nbsp;</li>
 								<li>Estivale Open Air + L’Intervalle (28.07-31.07.17)</li>
 								<li>Abonnement quatre jours</li> 								
-								<li>Abonnement quatre jours + un foulard estampillé Estivale</li>
+								<li>Abonnement quatre jours + <a href="images/foulard_estivale.jpg" data-lightbox="desk2">un foulard estampillé Estivale</a> <a href="images/foulard_estivale_2.jpg" data-lightbox="desk1"></a><a href="images/foulard_estivale_2.jpg" data-lightbox="desk2"></a></li>
 							</ul>
 							<ul class="hidden-xs">
 								<li>&nbsp;</li>
@@ -168,7 +169,7 @@ $templateparams = $app->getTemplate(true)->params;
 								<ul class="mobile">
 									<li>Abonnement trois jours </li>
 									<li>CHF 99 au lieu de CHF 142</li>
-									<li>Abonnement trois jours + un foulard estampillé Estivale</li>
+									<li>Abonnement trois jours + <a href="images/foulard_estivale.jpg" data-lightbox="mobile1">un foulard estampillé Estivale</a></li>
 									<li>CHF 110 au lieu de CHF 158</li>
 								</ul>
 								<div style=clear:both;></div>
@@ -176,7 +177,7 @@ $templateparams = $app->getTemplate(true)->params;
 								<ul class="mobile">
 									<li>Abonnement quatre jours</li>
 									<li>CHF 139 au lieu de CHF 189</li>								
-									<li>Abonnement quatre jours + un foulard estampillé Estivale</li>
+									<li>Abonnement quatre jours + <a href="images/foulard_estivale.jpg" data-lightbox="mobile2">un foulard estampillé Estivale</a> <a href="images/foulard_estivale_2.jpg" data-lightbox="mobile1"></a> <a href="images/foulard_estivale_2.jpg" data-lightbox="mobile2"></a></li>
 									<li>CHF 150 au lieu de CHF 205</li>
 								</ul>
 							</div>
@@ -206,7 +207,7 @@ $templateparams = $app->getTemplate(true)->params;
 								<ul class="mobile">
 									<li>Abonnement 3 Tage Erwachsener</li>
 									<li>CHF 99 anstatt CHF 142</li>
-									<li>Abonnement 3 Tage Erwachsener + 1 Halstuch im Estivale Stil</li>
+									<li>Abonnement 3 Tage Erwachsener + <a href="images/foulard_estivale.jpg"  data-lightbox="roadtrip">1 Halstuch im Estivale Stil</a></li>
 									<li>CHF 110 anstatt CHF 158</li>
 								</ul>
 								<div style=clear:both;></div>
@@ -214,7 +215,7 @@ $templateparams = $app->getTemplate(true)->params;
 								<ul class="mobile">
 									<li>Abonnement 4 Tages Erwachsener</li>
 									<li>CHF 139 anstatt CHF 189</li>
-									<li>Abonnement 4 Tage Erwachsener + 1 Halstuch im Estivale Stil</li>
+									<li>Abonnement 4 Tage Erwachsener + <a href="images/foulard_estivale.jpg" data-lightbox="image-2">1 Halstuch im Estivale Stil</a> <a href="images/foulard_estivale_2.jpg" data-lightbox="roadtrip"></a></li>
 									<li>CHF 150 anstatt CHF 205</li>
 								</ul>
 							</div>
