@@ -55,10 +55,7 @@ span.header-location{
 	font-size:30px;
 	font-weight:normal !important;
 }
-div.custom-social-icons{
-	float:right;
-	margin-top:-130px;
-}
+
 div.mod-languages{
 	position:relative;
 	z-index:11;
@@ -405,6 +402,13 @@ ul.menu-footer a:hover{
 		cursor:pointer;
 		left:35%;
 	}
+	div.custom-social-icons{
+		margin-top:15px;
+		float:right;
+	}
+	div.custom-social-icons img{
+		width:25px;
+	}
 	div#main_nav{
 		margin-top:-40px;
 	}
@@ -473,6 +477,10 @@ ul.menu-footer a:hover{
 		bottom:-25px;
 		cursor:pointer;
 		left:45%;
+	}
+	div.custom-social-icons{
+		float:right;
+		margin-top:-130px;
 	}
 	.custom-social-icons img{
 		margin-right:5px;

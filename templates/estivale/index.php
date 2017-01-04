@@ -9,10 +9,9 @@
 
 // No direct access.
 defined('_JEXEC') or die;
-
 JLoader::import('joomla.filesystem.file');
-
 JHtml::_('behavior.framework', true);
+JHtml::_('jquery.framework');
 
 $app = JFactory::getApplication();
 $pageId = $app->getMenu()->getActive()->id;
@@ -24,7 +23,6 @@ $this->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/la
 $this->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/bootstrap.min.css', 'text/css', 'screen');
 $this->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/template.js');
 $this->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/bootstrap.min.js');
-JHtml::_('jquery.framework');
 $this->addStyleSheet($this->baseurl . '/templates/' . $this->template . '/css/lightbox.css', 'text/css', 'screen');
 $this->addScript($this->baseurl . '/templates/' . $this->template . '/javascript/lightbox.js');
 $templateparams = $app->getTemplate(true)->params;
@@ -42,7 +40,7 @@ $templateparams = $app->getTemplate(true)->params;
 			<header id="header" class="col-xs-12">
 				<div class="logoheader">
 					<a href="index.php">
-						<img src="<?php echo $this->baseurl.'/templates/' . $this->template . '/images/logo-estivale.png'; ?>"  alt="<?php echo htmlspecialchars($templateparams->get('sitetitle')); ?>" class="logo-header" />
+						<img src="<?php echo $this->baseurl.'/templates/' . $this->template . '/images/logo-estivale.png'; ?>"  alt="Estivale Open Air - Du 28.07 au 01.08.2017 - Estavayler-le-Lac" class="logo-header" />
 					</a>
 					<h1 class="hidden-xs">
 						<span class="header-location">ESTAVAYER-LE-LAC</span><br />
@@ -54,7 +52,7 @@ $templateparams = $app->getTemplate(true)->params;
 					</h1>
 				</div>
 				<!-- end logoheader -->
-				<div class="col-sm-3 col-sm-offset-9">
+				<div class="col-sm-3 col-sm-offset-9 col-xs-5 col-xs-offset-7">
 					<jdoc:include type="modules" name="social-icons" />
 				</div>
 				<div class="col-xs-offset-10">
@@ -144,94 +142,97 @@ $templateparams = $app->getTemplate(true)->params;
 					</div>
 					<div class="teaser-price col-md-8 col-xs-12">
 						<?php if($lang=='fr-FR'){ ?>
-							<h2>OFFRE SPECIALE DE NOEL</h2>
+							<h2>BILLETS ET ABONNEMENTS</h2>
+			
 							<ul class="hidden-xs">
+								<li>Billet par soir</li>
+								<li>&nbsp;</li>
 								<li>Estivale Open Air (28-30.07.17)</li>
 								<li>Abonnement trois jours </li>
-								<li>Abonnement trois jours + <a href="images/foulard_estivale.jpg" data-lightbox="desk1">un foulard estampillé Estivale</a></li>
 								<li>&nbsp;</li>
-								<li>Estivale Open Air + L’Intervalle (28.07-31.07.17)</li>
+								<li>Estivale Open Air + L’Intervalle (28-31.07.17)</li>
 								<li>Abonnement quatre jours</li> 								
-								<li>Abonnement quatre jours + <a href="images/foulard_estivale.jpg" data-lightbox="desk2">un foulard estampillé Estivale</a> <a href="images/foulard_estivale_2.jpg" data-lightbox="desk1"></a><a href="images/foulard_estivale_2.jpg" data-lightbox="desk2"></a></li>
 							</ul>
 							<ul class="hidden-xs">
-								<li>&nbsp;</li>
-								<li>CHF 99 au lieu de CHF 142</li>
-								<li>CHF 110 au lieu de CHF 158</li>
+								<li>CHF 59</li>
 								<li>&nbsp;</li>
 								<li>&nbsp;</li>
-								<li>CHF 139 au lieu de CHF 189</li>
-								<li>CHF 150 au lieu de CHF 205</li>
+								<li>CHF 142</li>
+								<li>&nbsp;</li>
+								<li>&nbsp;</li>
+								<li>CHF 189</li>
 							</ul>
 							
-							<div class=visible-xs>
+							<div class="visible-xs">
+								<ul class="mobile">
+									<li>Billet par soir</li>
+									<li>CHF 59</li>
+								</ul>
+								<div style="clear:both;"></div>
 								<p>Estivale Open Air (28-30.07.17)</p>
 								<ul class="mobile">
 									<li>Abonnement trois jours </li>
-									<li>CHF 99 au lieu de CHF 142</li>
-									<li>Abonnement trois jours + <a href="images/foulard_estivale.jpg" data-lightbox="mobile1">un foulard estampillé Estivale</a></li>
-									<li>CHF 110 au lieu de CHF 158</li>
+									<li>CHF 142</li>
 								</ul>
-								<div style=clear:both;></div>
-								<p>Estivale Open Air + L’Intervalle (28.07-31.07.17)</p>
+								<div style="clear:both;"></div>
+								<p>Estivale Open Air + L’Intervalle (28-31.07.17)</p>
 								<ul class="mobile">
 									<li>Abonnement quatre jours</li>
-									<li>CHF 139 au lieu de CHF 189</li>								
-									<li>Abonnement quatre jours + <a href="images/foulard_estivale.jpg" data-lightbox="mobile2">un foulard estampillé Estivale</a> <a href="images/foulard_estivale_2.jpg" data-lightbox="mobile1"></a> <a href="images/foulard_estivale_2.jpg" data-lightbox="mobile2"></a></li>
-									<li>CHF 150 au lieu de CHF 205</li>
+									<li>CHF 189</li>								
 								</ul>
 							</div>
 						<?php }else{ ?>
-							<h2>Weihnachtsangebot</h2>							
+							<h2>Tickets und abonnements</h2>							
 							<ul class="hidden-xs">
+								<li>Ticket pro Tag</li>
+								<li>&nbsp;</li>
 								<li>Estivale Open Air (28-30.07.17)</li>
 								<li>Abonnement 3 Tage Erwachsener</li>
-								<li>Abonnement 3 Tage Erwachsener + 1 Halstuch im Estivale Stil</li>
 								<li>&nbsp;</li>
-								<li>Estivale Open Air + L’Intervalle (28.07-31.07.17)</li>				
+								<li>Estivale Open Air + L’Intervalle (28-31.07.17)</li>				
 								<li>Abonnement 4 Tage Erwachsener</li>
-								<li>Abonnement 4 Tage Erwachsener + 1 Halstuch im Estivale Stil</li>
 							</ul>
 							<ul class="hidden-xs">
-								<li>&nbsp;</li>
-								<li>CHF 99 anstatt CHF 142</li>
-								<li>CHF 110 anstatt CHF 158</li>
+								<li>CHF 59</li>
 								<li>&nbsp;</li>
 								<li>&nbsp;</li>
-								<li>CHF 139 anstatt CHF 189</li>
-								<li>CHF 150 anstatt CHF 205</li>
+								<li>CHF 142</li>
+								<li>&nbsp;</li>
+								<li>&nbsp;</li>
+								<li>CHF 189</li>
 							</ul>
 							<br />
-							<div class=visible-xs>
+							<div class="visible-xs">
+								<ul class="mobile">
+									<li>Ticket pro Tag</li>
+									<li>CHF 59</li>
+								</ul>
+								<div style="clear:both;"></div>
 								<p>Estivale Open Air (28-30.07.17)</p>
 								<ul class="mobile">
 									<li>Abonnement 3 Tage Erwachsener</li>
-									<li>CHF 99 anstatt CHF 142</li>
-									<li>Abonnement 3 Tage Erwachsener + <a href="images/foulard_estivale.jpg"  data-lightbox="roadtrip">1 Halstuch im Estivale Stil</a></li>
-									<li>CHF 110 anstatt CHF 158</li>
+									<li>CHF 142</li>
 								</ul>
-								<div style=clear:both;></div>
-								<p>Estivale Open Air + L’Intervalle (28.07-31.07.17)</p>
+								<div style="clear:both;"></div>
+								<p>Estivale Open Air + L’Intervalle (28-31.07.17)</p>
 								<ul class="mobile">
 									<li>Abonnement 4 Tages Erwachsener</li>
-									<li>CHF 139 anstatt CHF 189</li>
-									<li>Abonnement 4 Tage Erwachsener + <a href="images/foulard_estivale.jpg" data-lightbox="image-2">1 Halstuch im Estivale Stil</a> <a href="images/foulard_estivale_2.jpg" data-lightbox="roadtrip"></a></li>
-									<li>CHF 150 anstatt CHF 205</li>
+									<li>CHF 189</li>
 								</ul>
 							</div>
 						<?php } ?>
 					</div>
 					<?php if($lang=='fr-FR'){ ?>
-						<a href="index.php/fr/billetterie" class="buy-tickets-teaser col-md-4 col-sm-12 col-xs-12">ACHETER DES BILLETS</a>
+						<a href="https://etickets.infomaniak.com/shop/tkUHDpR8Ky/" class="buy-tickets-teaser col-md-4 col-sm-12 col-xs-12">ACHETER DES BILLETS</a>
 					<?php }else{ ?>
-						<a href="index.php/de/tickets" class="buy-tickets-teaser col-md-4 col-sm-12 col-xs-12">ONLINE SHOP</a>
+						<a href="https://etickets.infomaniak.com/shop/tkUHDpR8Ky/" class="buy-tickets-teaser col-md-4 col-sm-12 col-xs-12">ONLINE SHOP</a>
 					<?php } ?>
 				<?php }else{ ?>
 				<div class="col-xs-12 content">
 					<jdoc:include type="component" />
 				</div>
 				<?php } ?>
-				<div style=clear:both;></div>
+				<div style="clear:both;"></div>
 				<jdoc:include type="modules" name="article-slider" />
 				<jdoc:include type="modules" name="newsletter-footer" style="xhtml" />
 			</div>
