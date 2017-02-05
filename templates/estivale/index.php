@@ -34,7 +34,32 @@ $templateparams = $app->getTemplate(true)->params;
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<jdoc:include type="head" />
 		<!--[if lt IE 9]><script src="<?php echo JUri::root(true); ?>/media/jui/js/html5.js"></script><![endif]-->
+		<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '953470604784418');
+		fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=953470604784418&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- DO NOT MODIFY -->
+		<!-- End Facebook Pixel Code -->
 	</head>
+	
+	<!-- Tracking for Home, Prog, Baker, Gims, Tarifs, Intervalle -->
+	<?php if($pageId==101 || $pageId==140 || $pageId==142
+			|| $pageId==143 || $pageId==108
+			|| $pageId==152 || $pageId==124
+			|| $pageId==159 || $pageId==160
+			|| $pageId==135 || $pageId==145){ ?>
+		<script> fbq('track', 'ViewContent'); </script>
+	<?php } ?>
+	
 	<body id="body">
 		<div id="all">
 			<header id="header" class="col-xs-12">
@@ -98,14 +123,23 @@ $templateparams = $app->getTemplate(true)->params;
 			
 			<div id="contentarea">
 				<?php if($pageId==101 || $pageId==140 || $pageId==142){ ?>
-					<div class="teaser-baker col-xs-12">
+					<div class="teaser-dim-30 col-xs-12">
 						<?php if($lang=='fr-FR'){ ?>
-							<h1>BASTIAN BAKER<br /><span class="teaser-date">DIM. 30.07.17</span></h1>
-							<img src="<?php echo $this->baseurl.'/images/artists/baker_transparent.png'; ?>"  alt="Bastian Baker - Dimanche 30 juillet 2017" class="baker-teaser-image" />
-							<p class="hidden-xs">
-							Artiste sincère et inattendu à la voix profonde, Bastian Baker, chanteur-compositeur suisse, nourrit ses chansons de vie quotidienne et d’expériences
-							personnelles grâce à son immense créativité. Accompagné de sa guitare, il livre des performances scéniques chargées d’énergie et d’enthousiasme.<br />
-							>> <a href="index.php/fr/bastian-baker"> Lire la suite</a>
+							<h1>DIM. 30.07.17</h1>
+								<div class="teaser">
+									<h2>Olivia Ruiz</h2>
+									<img src="<?php echo $this->baseurl.'/images/artists/olivia_ruiz.png'; ?>"  alt="Olivia Ruiz - Dimanche 30 juillet 2017" class="ruiz-teaser-image" />
+								</div>
+								<div class="teaser">
+									<h2 class="h2-1">Tété</h2>
+									<img src="<?php echo $this->baseurl.'/images/artists/tete.png'; ?>"  alt="Tété - Dimanche 30 juillet 2017" class="tete-teaser-image" />
+								</div>
+								<div class="teaser">
+									<h2 class="h2-2">Bastian Baker</h2>
+									<a href="index.php/fr/bastian-baker" class="addWishListEvent">
+										<img src="<?php echo $this->baseurl.'/images/artists/baker_transparent.png'; ?>"  alt="Bastian Baker - Dimanche 30 juillet 2017" class="baker-teaser-image" />
+									</a>
+								</div>
 							</p>
 						<?php }else{ ?>
 							<h1>BASTIAN BAKER<br /><span class="teaser-date">SON. 30.07.17</span></h1>
@@ -114,29 +148,33 @@ $templateparams = $app->getTemplate(true)->params;
 							Bastian Baker überraschte die Welt und explodierte in die Musikszene als aufrichtiger und unerwarteter Künstler. Der Schweizer Sänger und Komponist
 							lässt sich beim Schreiben seiner Songs vom Alltag und von seinen persönlichen Erfahrungen inspirieren. Mit seiner Gitarre bewaffnet liefert er
 							enthusiastische und energiegeladene Bühnenauftritte.<br />
-							>> <a href="index.php/de/bastian-baker-allemand"> Mehr erfahren</a>
+							>> <a href="index.php/de/bastian-baker-allemand" class="addWishListEvent"> Mehr erfahren</a>
 							</p>
 						<?php } ?>
 					</div>
 
-					<div class="teaser-gims col-xs-12">
+					<div class="teaser-lu-31 col-xs-12">
 						<?php if($lang=='fr-FR'){ ?>
-							<h1>MAITRE GIMS<br /><span class="teaser-date">LU. 31.07.17</span></h1>
+							<h1>L'INTERVALLE<br /><span class="teaser-date">LU. 31.07.17</span></h1>
 							<h2>SOIREE SPECIALE</h2>
-							<img src="<?php echo $this->baseurl.'/images/artists/gims_transparent.png'; ?>"  alt="Maître Gims - Lundi 31 juillet 2017" class="gims-teaser-image col-sm-2 col-md-offset-7 col-sm-offset-6 col-xs-offset-2" />
-							<p class="hidden-sm hidden-xs">
-							Issu d’une famille de musiciens, Maître Gims est un rappeur, chanteur et compositeur franco-congolais. Que ce soit avec son groupe, Sexion d’Assaut ou en solo,
-							ce rappeur se retrouve régulièrement à la tête des charts avec son rap français mélangé à de la pop urbaine.<br />
-							>> <a href="index.php/fr/maitre-gims"> Lire la suite</a>
-							</p>
+							<div class="teaser">
+								<h3>Shy'm</h3>
+								<img src="<?php echo $this->baseurl.'/images/artists/shym.png'; ?>"  alt="Shym - Lundi 31 juillet 2017" class="shym-teaser-image" />
+								</div>
+							<div class="teaser">
+								<h3>Maître Gims</h3>
+								<a href="index.php/fr/maitre-gims" class="addWishListEvent">
+								<img src="<?php echo $this->baseurl.'/images/artists/gims_transparent.png'; ?>"  alt="Maître Gims - Lundi 31 juillet 2017" class="gims-teaser-image" />
+								</a>
+							</div>
 						<?php }else{ ?>
 							<h1>MAITRE GIMS<br /><span class="teaser-date">MON. 31.07.17</span></h1>
 							<h2>ZUSATZABEND</h2>
-							<img src="<?php echo $this->baseurl.'/images/artists/gims_transparent.png'; ?>"  alt="Maître Gims - Montag 31 Juli 2017" class="gims-teaser-image col-sm-2 col-md-offset-7 col-sm-offset-6 col-xs-offset-2" />
+							<img src="<?php echo $this->baseurl.'/images/artists/gims_transparent.png'; ?>"  alt="Maître Gims - Montag 31 Juli 2017" class="gims-teaser-image" />
 							<p class="hidden-sm hidden-xs">
 							Maître Gims ist ein aus einer französisch kongolesischen Musikerfamilie stammender Rapper, Sänger und Komponist. Ob mit seiner Gruppe Sexion d’Assaut oder solo,
 							der Rapper erobert regelmässig die Spitze der Charts mit seinem französischen Rap vermischt mit urbanem Pop. 2013 startet er als Solokünstler durch.<br />
-							>> <a href="index.php/de/maitre-gims-allemand"> Mehr erfahren</a>
+							>> <a href="index.php/de/maitre-gims-allemand" class="addWishListEvent"> Mehr erfahren</a>
 							</p>
 						<?php } ?>
 					</div>

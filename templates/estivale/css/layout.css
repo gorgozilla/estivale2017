@@ -202,56 +202,57 @@ div.moduletable-newsletter .btn-primary{
 	border-color:#fff !important;
 }
 
-/********** TEASER BAKER ********************************/
-div.teaser-baker{
-	height:430px;
+/********** TEASER DIM 30.07 ********************************/
+div.teaser-dim-30{
 	background:url('../../../images/bg_white_yellow.jpg') top left repeat-x;
+	background-color:#FFE33A;
 }
-div.teaser-baker h1{
+div.dim-30-column{
+	width:33%;
+	float:left;
+	
+}
+div.teaser-dim-30 h1{
 	color:#231f20;
-	text-align:right;
+	text-align:left;
 }
-div.teaser-baker h1 .teaser-date{
+div.teaser-dim-30 h1 .teaser-date{
 	color:#231f20;
 }
-div.teaser-baker p{
+div.teaser-dim-30 p{
 	color:#5b5b5b;
 	font-size:16px;
 }
-img.baker-teaser-image{
-	position:absolute;
-	bottom:0;
-	left:0;
-}
 
-/********** TEASER GIMS ********************************/
-div.teaser-gims{
-	height:350px;
-	background:url('../../../images/bg_intervalle.jpg') top left repeat-x;
+/********** TEASER LU. 31.07 ********************************/
+div.teaser-lu-31{
+	background:url('../../../images/bg_intervalle.png') top left repeat-x;
+	background-color:#026598;
 	clear:both;
 }
-div.teaser-gims h1{
-	color:#231f20;
-	text-align:right;
+div.teaser-lu-31 h1{
+	color:#c6c6c6;
+	text-align:center;
+	margin-top:20px;
 }
-div.teaser-gims h2{
+div.teaser-lu-31 h2{
 	color:#ffde16;
 	font-size:30px;
+	text-align:center;
+	margin-top:10px;
 }
 
-div.teaser-gims h1 .teaser-date{
+div.teaser-lu-31 h1 .teaser-date{
 	color:#231f20;
-	font-size:40px;
+	font-size:48px;
+	font-weight:bold;
+	display:block;
+	margin-top:50px;
 }
-div.teaser-gims p{
+div.teaser-lu-31 p{
 	color:#fff;
 	z-index:1;
 	position:relative;
-}
-img.gims-teaser-image{
-	position:absolute;
-	bottom:0;
-	z-index:0;
 }
 
 /********** TEASER PRICE ********************************/
@@ -427,22 +428,48 @@ ul.menu-footer a:hover{
 	.navbar-default .navbar-brand{
 		left:-50px;
 	}
-	div.teaser-baker h1{
-		font-size:40px;
-		padding:10px;
+	div.teaser-dim-30,
+	div.teaser-lu-31{
+		padding:0;
 	}
-	img.baker-teaser-image{
-		width:300px;
+	div.teaser-dim-30 h1{
+		font-size:48px;
+		text-align:center;
 	}
-	div.teaser-gims h1{
-		font-size:40px;
-		padding:15px 10px;
+	div.teaser-lu-31 h1{
+		font-size:50px;
+		margin-top:30px;
 	}
-	div.teaser-gims h2{
-		margin-top:-17px;
+	div.teaser-dim-30 h2,
+	div.teaser-lu-31 h3{
+		text-transform:uppercase;
+		font-size:30px;
+		color:#231f20;
+		padding:15px 25px;
+		background-color:#fff;
+		position:absolute;
+		top:200px;
+		left:20px;
+		z-index:1;
+	}
+	div.teaser-dim-30 div.teaser,
+	div.teaser-lu-31 div.teaser{
+		width:100%;
+		position:relative;
+		height:300px;
+		overflow:hidden;
+		border-bottom:15px solid #231f20;
+		margin:0;
+		padding:10px 0 0 0;
+	}
+	img.baker-teaser-image,
+	img.gims-teaser-image{
+		right:0;
+		position:absolute;
+		top:-50px;
 	}
 	img.gims-teaser-image{
-		width:300px;
+		top:-10px;
 	}
 	div.teaser-price ul.mobile li{
 		list-style:none;
@@ -507,35 +534,74 @@ ul.menu-footer a:hover{
 	div#contentarea div.moduletable-teaser-partners{
 		padding:30px 0 0 50px;
 	}
-	div.teaser-baker h1{
-		font-size:50px;
-		padding:30px;
+	div.teaser-dim-30{
+		height:430px;
 	}
-	div.teaser-baker p{
+	div.teaser-lu-31{
+		height:350px;
+	}
+	div.teaser-dim-30 h1{
+		font-size:50px;
+	}
+	div.teaser-dim-30 p{
 		padding:0 30px 0 370px;
 		font-size:14px;
 	}
-	img.baker-teaser-image{
-		width:350px;
+	div.teaser-lu-31 h1{
+		font-size:75px;
 	}
-	img.gims-teaser-image{
-		width:340px;
-	}
-	div.teaser-gims h1{
-		padding-top:20px;
-		text-align:left;
-		font-size:55px;
-	}
-	div.teaser-gims h2{
-		-ms-transform:  rotate(340deg); /* IE 9 */
-		-webkit-transform: rotate(340deg); /* Chrome, Safari, Opera */
-		transform: rotate(340deg);
-		position:absolute;
-		bottom:130px;
-	}
-	div.teaser-gims p{
+	div.teaser-lu-31 p{
 		font-size:14px;
 		padding:75px 20px 0 505px;
+	}
+	div.teaser-dim-30 h2,
+	div.teaser-lu-31 h3{
+		text-transform:uppercase;
+		font-size:40px;
+		color:#231f20;
+		padding:15px 25px;
+		background-color:#fff;
+		position:absolute;
+		top:320px;
+		z-index:1;
+		margin-left:5px;
+		font-weight:normal !important;
+	}
+	div.teaser-lu-31 h3{
+		top:250px;
+		left:145px;
+	}
+	div.teaser-dim-30 .h2-1{
+		left:41% !important;
+	}
+	div.teaser-dim-30 .h2-2,
+	div.teaser-lu-31 h3:nth-child(5){
+		left:65%;
+	}
+	img.baker-teaser-image{
+		position:absolute;
+		bottom:0;
+		right:0;
+	}
+	img.ruiz-teaser-image{
+		position:absolute;
+		bottom:-140px;
+		left:0;
+	}
+	img.tete-teaser-image{
+		position:absolute;
+		bottom:0;
+		left:30%;
+	}
+	img.gims-teaser-image{
+		position:absolute;
+		bottom:0;
+		right:0;
+	}
+	img.shym-teaser-image{
+		position:absolute;
+		bottom:0;
+		left:0;
 	}
 	div.custom-teaser-partners img{
 		margin:20px 0 30px 20px;
@@ -576,33 +642,22 @@ ul.menu-footer a:hover{
 	div#contentarea div.moduletable-teaser-partners{
 		padding:30px 0 0 100px;
 	}
-	div.teaser-gims h1{
-		padding-top:20px;
-		padding-right:550px;
-		text-align:right;
-		font-size:55px;
-	}
-	div.teaser-baker h1{
+	div.teaser-dim-30 h1{
 		font-size:58px;
-		margin-top:100px;
-		padding-right:20px;
 	}
-	div.teaser-baker h1 .teaser-date{
+	div.teaser-dim-30 h1 .teaser-date{
 		font-size:40px;
 	}
-	div.teaser-baker p{
+	div.teaser-dim-30 p{
 		padding:0px 20px 0 380px;
 		font-size:16px;
 	}
-	img.baker-teaser-image{
-		width:436px;
-	}
-	div.teaser-gims p{
+	/* img.baker-teaser-image{ */
+		/* width:436px; */
+	/* } */
+	div.teaser-lu-31 p{
 		font-size:15px;
 		padding:75px 20px 0 505px;
-	}
-	img.gims-teaser-image{
-		width:400px;
 	}
 	div.custom-teaser-partners img{
 		margin:20px 0 30px 50px;
@@ -632,25 +687,14 @@ ul.menu-footer a:hover{
 	.navbar-default .navbar-brand{
 		left:-15px;
 	}
-	div.teaser-baker h1{
+	div.teaser-dim-30 h1{
 		font-size:62px;
-		margin-top:50px;
-		padding-right:100px;
 	}
-	div.teaser-baker h1 .teaser-date{
+	div.teaser-dim-30 h1 .teaser-date{
 		font-size:40px;
 	}
-	div.teaser-baker p{
+	div.teaser-dim-30 p{
 		padding:0px 165px 0 460px;
-	}
-	img.gims-teaser-image{
-		width:440px;
-	}
-	div.teaser-gims h1{
-		padding-top:20px;
-		padding-right:750px;
-		text-align:right;
-		font-size:55px;
 	}
 	div.custom-teaser-partners img{
 		margin:20px 0 30px 100px;

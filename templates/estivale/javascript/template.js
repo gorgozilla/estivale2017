@@ -27,4 +27,12 @@
 	
 	$j(document).ready(function(){
 		init_maps();
+		
+		$j('a.addWishListEvent, section.blog-featured a').click(function() { 
+			fbq('track', 'AddToWishlist'); 
+		});
+		
+		$j('a.buy-tickets-artist, a.buy-tickets-teaser, a.btn-buy, li.item-115 a, li.item-144 a').click(function() { 
+			fbq('track', 'AddToCart'); 
+		});
 	});
