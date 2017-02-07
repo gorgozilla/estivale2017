@@ -113,19 +113,41 @@ div#main_nav{
 	background-color:#231f20 !important;
 	border-radius:0 !important;
 	color:#fff;
-	font-size:18px;
-	font-variant:small-caps;
+	font-size:16px;
+	text-transform:uppercase;
+}
+.nav-child{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.nav-child>li>a{
+	background-color:#fff !important;
+	border-radius:0 !important;
+	color:#231f20;
+	font-size:16px;
+	display:block;
+	width:100%;
+	padding:5px  5px 5px 30px;
 }
 .nav-pills>li>a:hover{
 	background-color:#3f383a !important;
 	color:#fff;
 }
-.nav-pills>li.current>a{
+.nav-pills>li.current>a,
+.nav-pills>li.active>a{
 	background-color:#ffde16 !important;
 	border-radius:0 !important;
 	color:#231f20 !important;
 	font-weight:bold;
 	font-size:18px;
+}
+.nav-child>li.current>a,
+.nav-child>li.active>a{
+	background-color:#ffee86 !important;
+	border-radius:0 !important;
+	color:#231f20 !important;
+	font-weight:bold;
 }
 
 /********** CONTENT AREA ********************************/
@@ -148,6 +170,7 @@ div#contentarea div.moduletable-newsletter h3
 	width:100% !important;
 }
 .blog-featured>h1,
+.blog>h1,
 .item-page h1,
 div.contact h1{
 	text-transform:uppercase;
@@ -187,6 +210,9 @@ div.control-group{
 	background-color:#ffde16 !important;
 	color:#231f20 !important;
 	border-color:#ffed81 !important;
+}
+div.nspArts{
+	padding:0;
 }
 /********** NEWSLETTER **********************************/
 div.moduletable-newsletter{
@@ -245,7 +271,6 @@ div.teaser-lu-31 h2{
 div.teaser-lu-31 h1 .teaser-date{
 	color:#231f20;
 	font-size:48px;
-	font-weight:bold;
 	display:block;
 	margin-top:50px;
 }
@@ -309,6 +334,7 @@ img.artist-banner{
 	position:relative;
 	z-index:0;
 	width:1170px;
+	margin-top:-10px;
 }
 h1.artist-h1{
 	color:#ededed;
@@ -548,7 +574,7 @@ ul.menu-footer a:hover{
 		font-size:14px;
 	}
 	div.teaser-lu-31 h1{
-		font-size:75px;
+		font-size:55px;
 	}
 	div.teaser-lu-31 p{
 		font-size:14px;
@@ -575,7 +601,7 @@ ul.menu-footer a:hover{
 		left:41% !important;
 	}
 	div.teaser-dim-30 .h2-2,
-	div.teaser-lu-31 h3:nth-child(5){
+	div.teaser-lu-31 .h2-2{
 		left:65%;
 	}
 	img.baker-teaser-image{
@@ -652,9 +678,9 @@ ul.menu-footer a:hover{
 		padding:0px 20px 0 380px;
 		font-size:16px;
 	}
-	/* img.baker-teaser-image{ */
-		/* width:436px; */
-	/* } */
+	div.teaser-lu-31 h1{
+		font-size:75px;
+	}
 	div.teaser-lu-31 p{
 		font-size:15px;
 		padding:75px 20px 0 505px;
