@@ -54,8 +54,8 @@ $templateparams = $app->getTemplate(true)->params;
 	<!-- Tracking for Home, Prog, Baker, Gims, Tarifs, Intervalle -->
 	<?php if($pageId==101 || $pageId==140 || $pageId==142
 			|| $pageId==143 || $pageId==108
-			|| $pageId==176 || $pageId==177 || $pageId==178 || $pageId==179 || $pageId==180
-			|| $pageId==171 || $pageId==172 || $pageId==173 || $pageId==174 || $pageId==175
+			|| $pageId==176 || $pageId==177 || $pageId==178 || $pageId==179 || $pageId==180|| $pageId==182
+			|| $pageId==171 || $pageId==172 || $pageId==173 || $pageId==174 || $pageId==175 || $pageId==181
 			|| $pageId==159 || $pageId==160
 			|| $pageId==135 || $pageId==145){ ?>
 		<script> fbq('track', 'ViewContent'); </script>
@@ -134,6 +134,12 @@ $templateparams = $app->getTemplate(true)->params;
 									</a>
 								</div>
 								<div class="teaser">
+									<h2 class="h2-3">Amir</h2>
+									<a href="index.php/fr/amir" class="addWishListEvent">
+									<img src="<?php echo $this->baseurl.'/images/artists/amir.png'; ?>"  alt="Amir - Dimanche 30 juillet 2017" class="amir-teaser-image" />
+									</a>
+								</div>
+								<div class="teaser">
 									<h2 class="h2-1">Tété</h2>
 									<a href="index.php/fr/prog/dimanche-30-juillet/tete" class="addWishListEvent">
 										<img src="<?php echo $this->baseurl.'/images/artists/tete.png'; ?>"  alt="Tété - Dimanche 30 juillet 2017" class="tete-teaser-image" />
@@ -152,6 +158,12 @@ $templateparams = $app->getTemplate(true)->params;
 									<h2>Olivia Ruiz</h2>
 									<a href="index.php/de/programm/sonntag-30-juli/olivia-ruiz-allemand" class="addWishListEvent">
 									<img src="<?php echo $this->baseurl.'/images/artists/olivia_ruiz.png'; ?>"  alt="Olivia Ruiz - Dimanche 30 juillet 2017" class="ruiz-teaser-image" />
+									</a>
+								</div>
+								<div class="teaser">
+									<h2 class="h2-3">Amir</h2>
+									<a href="index.php/de/amir-allemand" class="addWishListEvent">
+									<img src="<?php echo $this->baseurl.'/images/artists/amir.png'; ?>"  alt="Amir - Dimanche 30 juillet 2017" class="amir-teaser-image" />
 									</a>
 								</div>
 								<div class="teaser">

@@ -255,6 +255,7 @@ div.teaser-lu-31{
 	background:url('../../../images/bg_intervalle.png') top left repeat-x;
 	background-color:#026598;
 	clear:both;
+	z-index:10;
 }
 div.teaser-lu-31 h1{
 	color:#c6c6c6;
@@ -494,6 +495,9 @@ ul.menu-footer a:hover{
 		position:absolute;
 		top:-50px;
 	}
+	img.baker-teaser-image{
+		width:300px !important;
+	}
 	img.gims-teaser-image{
 		top:-10px;
 	}
@@ -597,8 +601,14 @@ ul.menu-footer a:hover{
 		top:250px;
 		left:145px;
 	}
+	div.teaser-dim-30 h2{
+		z-index:10;
+	}
 	div.teaser-dim-30 .h2-1{
-		left:41% !important;
+		left:49% !important;
+	}
+	div.teaser-dim-30 .h2-3{
+		left:32% !important;
 	}
 	div.teaser-dim-30 .h2-2,
 	div.teaser-lu-31 .h2-2{
@@ -613,11 +623,19 @@ ul.menu-footer a:hover{
 		position:absolute;
 		bottom:-140px;
 		left:0;
+		z-index:4;
 	}
 	img.tete-teaser-image{
 		position:absolute;
 		bottom:0;
-		left:30%;
+		left:40%;
+		z-index:2;
+	}
+	img.amir-teaser-image{
+		position:absolute;
+		bottom:0;
+		left:25%;
+		z-index:3;
 	}
 	img.gims-teaser-image{
 		position:absolute;
@@ -687,6 +705,20 @@ ul.menu-footer a:hover{
 	}
 	div.custom-teaser-partners img{
 		margin:20px 0 30px 50px;
+	}
+}
+@media (max-width: 992px) { 
+	img.ruiz-teaser-image{
+		width:300px;
+	}
+	img.baker-teaser-image{
+		width:240px;
+	}
+	img.tete-teaser-image{
+		width:250px;
+	}
+	img.amir-teaser-image{
+		width:200px;
 	}
 }
 
