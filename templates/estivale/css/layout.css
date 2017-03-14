@@ -89,7 +89,7 @@ div.mod-languages{
 /********** NAVIGATION ********************************/
 div#main_nav{
 	float:left;
-	z-index:10;
+	z-index:20;
 }
 .nav-pills>li{
 	float:none !important;
@@ -228,6 +228,43 @@ div.moduletable-newsletter .btn-primary{
 	border-color:#fff !important;
 }
 
+/********** TEASER SAM. 29.07 ********************************/
+div.teaser-sam-29{
+	padding:0;
+	position:relative;
+	overflow:hidden;
+  height: 337px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image:url('../../../images/artists/iam.jpg');
+
+}
+div.teaser-sam-29 h1{
+	color:#c6c6c6;
+	text-align:center;
+	top:20%;
+	position:absolute;
+	left:15px;
+}
+div.teaser-sam-29 h1{
+	color:#231f20;
+	text-align:left;
+}
+div.teaser-sam-29 h1 .teaser-date{
+	color:#231f20;
+}
+div.teaser-sam-29 h2{
+	text-transform:uppercase;
+	font-size:40px;
+	color:#231f20;
+	padding:15px 25px;
+	background-color:#fff;
+	position:absolute;
+	top:70%;
+	z-index:0;
+	margin-left:20px;
+	font-weight:normal !important;
+}
 /********** TEASER DIM 30.07 ********************************/
 div.teaser-dim-30{
 	background:url('../../../images/bg_white_yellow.jpg') top left repeat-x;
@@ -236,7 +273,6 @@ div.teaser-dim-30{
 div.dim-30-column{
 	width:33%;
 	float:left;
-	
 }
 div.teaser-dim-30 h1{
 	color:#231f20;
@@ -467,6 +503,10 @@ ul.menu-footer a:hover{
 		font-size:50px;
 		margin-top:30px;
 	}
+	div.teaser-sam-29 h2{
+		font-size:30px;
+		padding:15px 25px;
+	}
 	div.teaser-dim-30 h2,
 	div.teaser-lu-31 h3{
 		text-transform:uppercase;
@@ -570,7 +610,8 @@ ul.menu-footer a:hover{
 	div.teaser-lu-31{
 		height:350px;
 	}
-	div.teaser-dim-30 h1{
+	div.teaser-dim-30 h1,
+	div.teaser-sam-29 h1{
 		font-size:50px;
 	}
 	div.teaser-dim-30 p{
@@ -686,6 +727,12 @@ ul.menu-footer a:hover{
 	div#contentarea div.moduletable-teaser-partners{
 		padding:30px 0 0 100px;
 	}
+	div.teaser-sam-29 h1{
+		font-size:58px;
+	}
+	div.teaser-sam-29 h1 .teaser-date{
+		font-size:40px;
+	}
 	div.teaser-dim-30 h1{
 		font-size:58px;
 	}
@@ -744,6 +791,9 @@ ul.menu-footer a:hover{
 	}
 	.navbar-default .navbar-brand{
 		left:-15px;
+	}
+	div.teaser-sam-29 h1{
+		font-size:62px;
 	}
 	div.teaser-dim-30 h1{
 		font-size:62px;

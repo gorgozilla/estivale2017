@@ -54,8 +54,8 @@ $templateparams = $app->getTemplate(true)->params;
 	<!-- Tracking for Home, Prog, Baker, Gims, Tarifs, Intervalle -->
 	<?php if($pageId==101 || $pageId==140 || $pageId==142
 			|| $pageId==143 || $pageId==108
-			|| $pageId==176 || $pageId==177 || $pageId==178 || $pageId==179 || $pageId==180|| $pageId==182
-			|| $pageId==171 || $pageId==172 || $pageId==173 || $pageId==174 || $pageId==175 || $pageId==181
+			|| $pageId==176 || $pageId==177 || $pageId==178 || $pageId==179 || $pageId==180|| $pageId==182|| $pageId==183
+			|| $pageId==171 || $pageId==172 || $pageId==173 || $pageId==174 || $pageId==175 || $pageId==181|| $pageId==184
 			|| $pageId==159 || $pageId==160
 			|| $pageId==135 || $pageId==145){ ?>
 		<script> fbq('track', 'ViewContent'); </script>
@@ -124,6 +124,25 @@ $templateparams = $app->getTemplate(true)->params;
 			
 			<div id="contentarea">
 				<?php if($pageId==101 || $pageId==140 || $pageId==142){ ?>
+					<div class="teaser-sam-29 col-xs-12">
+						<?php if($lang=='fr-FR'){ ?>
+							<h1>SAM. 29.07.17</h1>
+								<div class="teaser">
+									<h2>IAM</h2>
+									<a href="index.php/fr/iam" class="addWishListEvent" style="height:369px;display:block;">
+									
+									</a>
+								</div>
+						<?php }else{ ?>
+							<h1>SAM. 29.07.17</h1>
+								<div class="teaser">
+									<h2>IAM</h2>
+									<a href="index.php/de/iam" class="addWishListEvent">
+									<img src="<?php echo $this->baseurl.'/images/artists/iam.jpg'; ?>"  alt="IAM - Samedi 29 juillet 2017" class="iam-teaser-image" />
+									</a>
+								</div>
+						<?php } ?>
+					</div>
 					<div class="teaser-dim-30 col-xs-12">
 						<?php if($lang=='fr-FR'){ ?>
 							<h1>DIM. 30.07.17</h1>
@@ -151,7 +170,6 @@ $templateparams = $app->getTemplate(true)->params;
 										<img src="<?php echo $this->baseurl.'/images/artists/baker_transparent.png'; ?>"  alt="Bastian Baker - Dimanche 30 juillet 2017" class="baker-teaser-image" />
 									</a>
 								</div>
-							</p>
 						<?php }else{ ?>
 							<h1>SON. 30.07.17</h1>
 								<div class="teaser">
@@ -178,7 +196,6 @@ $templateparams = $app->getTemplate(true)->params;
 										<img src="<?php echo $this->baseurl.'/images/artists/baker_transparent.png'; ?>"  alt="Bastian Baker - Dimanche 30 juillet 2017" class="baker-teaser-image" />
 									</a>
 								</div>
-							</p>
 						<?php } ?>
 					</div>
 
