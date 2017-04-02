@@ -129,17 +129,13 @@ $templateparams = $app->getTemplate(true)->params;
 							<h1>SAM. 29.07.17</h1>
 								<div class="teaser">
 									<h2>IAM</h2>
-									<a href="index.php/fr/iam" class="addWishListEvent" style="height:369px;display:block;">
-									
-									</a>
+									<a href="index.php/fr/iam" class="addWishListEvent" style="height:369px;display:block;"></a>
 								</div>
 						<?php }else{ ?>
 							<h1>SAM. 29.07.17</h1>
 								<div class="teaser">
 									<h2>IAM</h2>
-									<a href="index.php/de/iam" class="addWishListEvent">
-									<img src="<?php echo $this->baseurl.'/images/artists/iam.jpg'; ?>"  alt="IAM - Samedi 29 juillet 2017" class="iam-teaser-image" />
-									</a>
+									<a href="index.php/de/iam" class="addWishListEvent" style="height:369px;display:block;"></a>
 								</div>
 						<?php } ?>
 					</div>

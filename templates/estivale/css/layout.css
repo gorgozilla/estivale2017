@@ -241,10 +241,8 @@ div.teaser-sam-29{
 }
 div.teaser-sam-29 h1{
 	color:#c6c6c6;
-	text-align:center;
-	top:20%;
-	position:absolute;
-	left:15px;
+	margin-top:50px;
+	margin-left:15px;
 }
 div.teaser-sam-29 h1{
 	color:#231f20;
@@ -277,6 +275,7 @@ div.dim-30-column{
 div.teaser-dim-30 h1{
 	color:#231f20;
 	text-align:left;
+	margin-top:15px;
 }
 div.teaser-dim-30 h1 .teaser-date{
 	color:#231f20;
@@ -495,7 +494,8 @@ ul.menu-footer a:hover{
 	div.teaser-lu-31{
 		padding:0;
 	}
-	div.teaser-dim-30 h1{
+	div.teaser-dim-30 h1,
+	div.teaser-sam-29 h1{
 		font-size:48px;
 		text-align:center;
 	}
