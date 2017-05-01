@@ -51,9 +51,9 @@
 					<option value="0">JDISABLED</option>
 				</field>
  
-				<field name="register-require_typemedia" type="list"
-					description="PLG_USER_ESTIPRESS_FIELD_TYPEMEDIA_DESC"
-					label="PLG_USER_ESTIPRESS_FIELD_TYPEMEDIA_LABEL">
+ 				<field name="register-require_phone" type="list"
+					description="PLG_USER_ESTIPRESS_FIELD_PHONE_DESC"
+					label="PLG_USER_ESTIPRESS_FIELD_PHONE_LABEL">
 					<option value="2">JOPTION_REQUIRED</option>
 					<option value="1">JOPTION_OPTIONAL</option>
 					<option value="0">JDISABLED</option>
@@ -62,30 +62,6 @@
 				<field name="register-require_fonction" type="list"
 					description="PLG_USER_ESTIPRESS_FIELD_FONCTION_DESC"
 					label="PLG_USER_ESTIPRESS_FIELD_FONCTION_LABEL">
-					<option value="2">JOPTION_REQUIRED</option>
-					<option value="1">JOPTION_OPTIONAL</option>
-					<option value="0">JDISABLED</option>
-				</field>
-				
-				<field name="register-require_tirage" type="list"
-					description="PLG_USER_ESTIPRESS_FIELD_TIRAGE_DESC"
-					label="PLG_USER_ESTIPRESS_FIELD_TIRAGE_LABEL">
-					<option value="2">JOPTION_REQUIRED</option>
-					<option value="1">JOPTION_OPTIONAL</option>
-					<option value="0">JDISABLED</option>
-				</field>
-				
-				<field name="register-require_zonediff" type="list"
-					description="PLG_USER_ESTIPRESS_FIELD_ZONEDIFF_DESC"
-					label="PLG_USER_ESTIPRESS_FIELD_ZONEDIFF_LABEL">
-					<option value="2">JOPTION_REQUIRED</option>
-					<option value="1">JOPTION_OPTIONAL</option>
-					<option value="0">JDISABLED</option>
-				</field>
-				
-				<field name="register-require_sitemedia" type="list"
-					description="PLG_USER_ESTIPRESS_FIELD_SITEMEDIA_DESC"
-					label="PLG_USER_ESTIPRESS_FIELD_SITEMEDIA_LABEL">
 					<option value="2">JOPTION_REQUIRED</option>
 					<option value="1">JOPTION_OPTIONAL</option>
 					<option value="0">JDISABLED</option>
@@ -132,10 +108,10 @@
 					<option value="1">JOPTION_OPTIONAL</option>
 					<option value="0">JDISABLED</option>
 				</field>
- 
-				<field name="profile-require_typemedia" type="list"
-					description="PLG_USER_ESTIPRESS_FIELD_TYPEMEDIA_DESC"
-					label="PLG_USER_ESTIPRESS_FIELD_TYPEMEDIA_LABEL">
+				
+ 				<field name="profile-require_phone" type="list"
+					description="PLG_USER_ESTIPRESS_FIELD_PHONE_DESC"
+					label="PLG_USER_ESTIPRESS_FIELD_PHONE_LABEL">
 					<option value="2">JOPTION_REQUIRED</option>
 					<option value="1">JOPTION_OPTIONAL</option>
 					<option value="0">JDISABLED</option>
@@ -144,30 +120,6 @@
 				<field name="profile-require_fonction" type="list"
 					description="PLG_USER_ESTIPRESS_FIELD_FONCTION_DESC"
 					label="PLG_USER_ESTIPRESS_FIELD_FONCTION_LABEL">
-					<option value="2">JOPTION_REQUIRED</option>
-					<option value="1">JOPTION_OPTIONAL</option>
-					<option value="0">JDISABLED</option>
-				</field>
-				
-				<field name="profile-require_tirage" type="list"
-					description="PLG_USER_ESTIPRESS_FIELD_TIRAGE_DESC"
-					label="PLG_USER_ESTIPRESS_FIELD_TIRAGE_LABEL">
-					<option value="2">JOPTION_REQUIRED</option>
-					<option value="1">JOPTION_OPTIONAL</option>
-					<option value="0">JDISABLED</option>
-				</field>
-				
-				<field name="profile-require_zonediff" type="list"
-					description="PLG_USER_ESTIPRESS_FIELD_ZONEDIFF_DESC"
-					label="PLG_USER_ESTIPRESS_FIELD_ZONEDIFF_LABEL">
-					<option value="2">JOPTION_REQUIRED</option>
-					<option value="1">JOPTION_OPTIONAL</option>
-					<option value="0">JDISABLED</option>
-				</field>
-				
-				<field name="profile-require_sitemedia" type="list"
-					description="PLG_USER_ESTIPRESS_FIELD_SITEMEDIA_DESC"
-					label="PLG_USER_ESTIPRESS_FIELD_SITEMEDIA_LABEL">
 					<option value="2">JOPTION_REQUIRED</option>
 					<option value="1">JOPTION_OPTIONAL</option>
 					<option value="0">JDISABLED</option>

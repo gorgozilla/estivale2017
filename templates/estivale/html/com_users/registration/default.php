@@ -11,14 +11,44 @@ defined('_JEXEC') or die;
 
 JHtml::_('behavior.keepalive');
 JHtml::_('behavior.formvalidator');
+
+function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
 ?>
+
+<script>
+	$j(document).ready(function(){
+	   $j("input[name='jform[username]']").val('<?php echo generateRandomString(); ?>');
+	   
+		$j("input[type='submit']").bind("click",function() 
+		{ 
+
+		}); 
+	});
+	
+	$j(document).on('submit','#member-registration',function(){
+			if ($j('#jform_profilepicture_file').get(0).files.length === 0) {
+				alert("Veuillez sélectionner une photo"); 
+				event.preventDefault(); 
+			}
+		$j("input[name='jform[name]']").val($j('#jform_estipress_firstname').val()+' '+$j('#jform_estipress_lastname').val());
+	});
+</script>
 <div class="registration<?php echo $this->pageclass_sfx?>">
 			<h1><?php echo $this->escape($this->params->get('page_heading')); ?></h1>
 	<p>
-En vous connectant à notre espace presse, vous aurez la possibilité d'accéder à un certain nombre d'informations telles que: le dossier de presse du Festival les communiqués de presse les photos d'ambiance, logos et affiches du Festival, en HD.
+Le service de presse de l'Estivale vous communiquera l'acceptation ou le refus de votre demande par mail.</p>
 
-La plupart des rubriques sont des zones protégées. Si vous n'êtes pas encore inscrit, merci de remplir ce formulaire.
-</p>
+<p>En cas de problème, ou pour tout renseignement complémentaire, n'hésitez pas à nous contacter par courriel à presse(at)estivale.ch</p>
+
 	<form id="member-registration" action="<?php echo JRoute::_('index.php?option=com_users&task=registration.register'); ?>" method="post" class="form-validate" enctype="multipart/form-data">
 		<?php // Iterate through the form fieldsets and display each one. ?>
 		<?php foreach ($this->form->getFieldsets() as $fieldset): ?>

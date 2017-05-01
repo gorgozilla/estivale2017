@@ -17,7 +17,6 @@ body#body {
 	padding:0;
 	background-color:#f7f7f7;
 }
-
 body h1,body h2,body h3,body h4,body h5,body h6 {
 	margin: 0;
 	font-family: inherit;
@@ -26,13 +25,25 @@ body h1,body h2,body h3,body h4,body h5,body h6 {
 	text-rendering: optimizelegibility;
 	word-wrap: break-word;
 }
-
 div#all{
 	margin:0 auto;
 	position:relative;
 	background-color:#fff;
 }
-
+fieldset.checkboxes{
+	margin-left:20px;
+}
+label{
+	display:inline !important;
+}
+label.checkbox{
+	display: inline-block!important;
+    width: 220px;
+}
+.registration.login,
+.registration.login + div{
+	display:none !important;
+}
 /********** HEADER ********************************/
 header{
 	border-bottom:25px solid #231f20;
@@ -189,6 +200,7 @@ div.contact h1{
 	margin:20px 0 10px;
 	color:#ffde16;
 	text-transform:uppercase;
+	font-size:30px;
 }
 div#contentarea a,
 div#contentarea a:visited{
@@ -228,92 +240,63 @@ div.moduletable-newsletter .btn-primary{
 	border-color:#fff !important;
 }
 
-/********** TEASER SAM. 29.07 ********************************/
-div.teaser-sam-29{
+/********** TEASER LINEUP ********************************/
+div.teaser-lineup{
 	padding:0;
 	position:relative;
 	overflow:hidden;
-  height: 337px;
-  background-position: center center;
+  min-height:565px;
+  background-position: top left;
   background-repeat: no-repeat;
-  background-image:url('../../../images/artists/iam.jpg');
-
+  background-image:url('../images/bg_lineup.jpg');
+  background-color:#c6c6c6;
 }
-div.teaser-sam-29 h1{
-	color:#c6c6c6;
-	margin-top:50px;
-	margin-left:15px;
+div.teaser-lineup a:link{
+	text-decoration:none !important;
 }
-div.teaser-sam-29 h1{
-	color:#231f20;
-	text-align:left;
-}
-div.teaser-sam-29 h1 .teaser-date{
-	color:#231f20;
-}
-div.teaser-sam-29 h2{
-	text-transform:uppercase;
-	font-size:40px;
-	color:#231f20;
-	padding:15px 25px;
-	background-color:#fff;
-	position:absolute;
-	top:70%;
-	z-index:0;
-	margin-left:20px;
-	font-weight:normal !important;
-}
-/********** TEASER DIM 30.07 ********************************/
-div.teaser-dim-30{
-	background:url('../../../images/bg_white_yellow.jpg') top left repeat-x;
-	background-color:#FFE33A;
-}
-div.dim-30-column{
-	width:33%;
-	float:left;
-}
-div.teaser-dim-30 h1{
-	color:#231f20;
-	text-align:left;
-	margin-top:15px;
-}
-div.teaser-dim-30 h1 .teaser-date{
-	color:#231f20;
-}
-div.teaser-dim-30 p{
-	color:#5b5b5b;
-	font-size:16px;
-}
-
-/********** TEASER LU. 31.07 ********************************/
-div.teaser-lu-31{
-	background:url('../../../images/bg_intervalle.png') top left repeat-x;
-	background-color:#026598;
-	clear:both;
-	z-index:10;
-}
-div.teaser-lu-31 h1{
-	color:#c6c6c6;
+div.teaser-lineup h1,
+div.teaser-lineup h2,
+div.teaser-lineup h3,
+div.teaser-lineup h4,
+div.teaser-lineup h5,
+div.teaser-lineup h6{
 	text-align:center;
-	margin-top:20px;
+	font-weight:bold;
+	margin:10px 0;
+	padding:0;
 }
-div.teaser-lu-31 h2{
-	color:#ffde16;
-	font-size:30px;
-	text-align:center;
-	margin-top:10px;
+div.teaser-lineup h1{
+	color:#eece15;
+	margin-top:25px;
+	margin-bottom:20px;
+	text-shadow: none;
 }
-
-div.teaser-lu-31 h1 .teaser-date{
+div.teaser-lineup h2{
 	color:#231f20;
-	font-size:48px;
-	display:block;
-	margin-top:50px;
 }
-div.teaser-lu-31 p{
+div.teaser-lineup h3 a,
+div.teaser-lineup h3 span{
+	color:#fff !important;
+}
+div.teaser-lineup h4{
+	color:#231f20;
+}
+div.teaser-lineup h5 a,
+div.teaser-lineup h5 span{
+	color:#fff !important;
+}
+div.teaser-lineup h5 a:hover,
+div.teaser-lineup h3 a:hover{
+	color:#ee3939 !important;
+}
+div.teaser-lineup h6{
+	color:#231f20;
+}
+span.black-span{
+	color:#231f20 !important;
+}
+span.white-span{
 	color:#fff;
-	z-index:1;
-	position:relative;
 }
 
 /********** TEASER PRICE ********************************/
@@ -490,57 +473,6 @@ ul.menu-footer a:hover{
 	.navbar-default .navbar-brand{
 		left:-50px;
 	}
-	div.teaser-dim-30,
-	div.teaser-lu-31{
-		padding:0;
-	}
-	div.teaser-dim-30 h1,
-	div.teaser-sam-29 h1{
-		font-size:48px;
-		text-align:center;
-	}
-	div.teaser-lu-31 h1{
-		font-size:50px;
-		margin-top:30px;
-	}
-	div.teaser-sam-29 h2{
-		font-size:30px;
-		padding:15px 25px;
-	}
-	div.teaser-dim-30 h2,
-	div.teaser-lu-31 h3{
-		text-transform:uppercase;
-		font-size:30px;
-		color:#231f20;
-		padding:15px 25px;
-		background-color:#fff;
-		position:absolute;
-		top:200px;
-		left:20px;
-		z-index:1;
-	}
-	div.teaser-dim-30 div.teaser,
-	div.teaser-lu-31 div.teaser{
-		width:100%;
-		position:relative;
-		height:300px;
-		overflow:hidden;
-		border-bottom:15px solid #231f20;
-		margin:0;
-		padding:10px 0 0 0;
-	}
-	img.baker-teaser-image,
-	img.gims-teaser-image{
-		right:0;
-		position:absolute;
-		top:-50px;
-	}
-	img.baker-teaser-image{
-		width:300px !important;
-	}
-	img.gims-teaser-image{
-		top:-10px;
-	}
 	div.teaser-price ul.mobile li{
 		list-style:none;
 		padding:0;
@@ -552,6 +484,27 @@ ul.menu-footer a:hover{
 		padding:0;
 		padding:0 0 10px 10px;
 		font-weight:bold;
+	}
+	div.teaser-lineup h1{
+		font-size:80px;
+	}
+	div.teaser-lineup h2{
+		font-size:60px;
+	}
+	div.teaser-lineup h3 a,
+	div.teaser-lineup h3 span{
+		font-size:50px;
+	}
+	div.teaser-lineup h4{
+		font-size:25px;
+	}
+	div.teaser-lineup h5 a,
+	div.teaser-lineup h5 span{
+		font-size:20px;
+	}
+	div.teaser-lineup h6{
+		font-size:18px;
+		color:#231f20;
 	}
 }
 
@@ -604,92 +557,29 @@ ul.menu-footer a:hover{
 	div#contentarea div.moduletable-teaser-partners{
 		padding:30px 0 0 50px;
 	}
-	div.teaser-dim-30{
-		height:430px;
-	}
-	div.teaser-lu-31{
-		height:350px;
-	}
-	div.teaser-dim-30 h1,
-	div.teaser-sam-29 h1{
-		font-size:50px;
-	}
-	div.teaser-dim-30 p{
-		padding:0 30px 0 370px;
-		font-size:14px;
-	}
-	div.teaser-lu-31 h1{
-		font-size:55px;
-	}
-	div.teaser-lu-31 p{
-		font-size:14px;
-		padding:75px 20px 0 505px;
-	}
-	div.teaser-dim-30 h2,
-	div.teaser-lu-31 h3{
-		text-transform:uppercase;
-		font-size:40px;
-		color:#231f20;
-		padding:15px 25px;
-		background-color:#fff;
-		position:absolute;
-		top:320px;
-		z-index:1;
-		margin-left:5px;
-		font-weight:normal !important;
-	}
-	div.teaser-lu-31 h3{
-		top:250px;
-		left:145px;
-	}
-	div.teaser-dim-30 h2{
-		z-index:10;
-	}
-	div.teaser-dim-30 .h2-1{
-		left:49% !important;
-	}
-	div.teaser-dim-30 .h2-3{
-		left:32% !important;
-	}
-	div.teaser-dim-30 .h2-2,
-	div.teaser-lu-31 .h2-2{
-		left:65%;
-	}
-	img.baker-teaser-image{
-		position:absolute;
-		bottom:0;
-		right:0;
-	}
-	img.ruiz-teaser-image{
-		position:absolute;
-		bottom:-140px;
-		left:0;
-		z-index:4;
-	}
-	img.tete-teaser-image{
-		position:absolute;
-		bottom:0;
-		left:40%;
-		z-index:2;
-	}
-	img.amir-teaser-image{
-		position:absolute;
-		bottom:0;
-		left:25%;
-		z-index:3;
-	}
-	img.gims-teaser-image{
-		position:absolute;
-		bottom:0;
-		right:0;
-	}
-	img.shym-teaser-image{
-		position:absolute;
-		bottom:0;
-		left:0;
-	}
 	div.custom-teaser-partners img{
 		margin:20px 0 30px 20px;
+	}
+	div.teaser-lineup h1{
+		font-size:100px;
+	}
+	div.teaser-lineup h2{
+		font-size:65px;
+	}
+	div.teaser-lineup h3 a,
+	div.teaser-lineup h3 span{
+		font-size:53px;
+	}
+	div.teaser-lineup h4{
+		font-size:30px;
+	}
+	div.teaser-lineup h5 a,
+	div.teaser-lineup h5 span{
+		font-size:25px;
+	}
+	div.teaser-lineup h6{
+		font-size:20px;
+		color:#231f20;
 	}
 }
 
@@ -727,31 +617,29 @@ ul.menu-footer a:hover{
 	div#contentarea div.moduletable-teaser-partners{
 		padding:30px 0 0 100px;
 	}
-	div.teaser-sam-29 h1{
-		font-size:58px;
-	}
-	div.teaser-sam-29 h1 .teaser-date{
-		font-size:40px;
-	}
-	div.teaser-dim-30 h1{
-		font-size:58px;
-	}
-	div.teaser-dim-30 h1 .teaser-date{
-		font-size:40px;
-	}
-	div.teaser-dim-30 p{
-		padding:0px 20px 0 380px;
-		font-size:16px;
-	}
-	div.teaser-lu-31 h1{
-		font-size:75px;
-	}
-	div.teaser-lu-31 p{
-		font-size:15px;
-		padding:75px 20px 0 505px;
-	}
 	div.custom-teaser-partners img{
 		margin:20px 0 30px 50px;
+	}
+	div.teaser-lineup h1{
+		font-size:120px;
+	}
+	div.teaser-lineup h2{
+		font-size:85px;
+	}
+	div.teaser-lineup h3 a,
+	div.teaser-lineup h3 span{
+		font-size:70px;
+	}
+	div.teaser-lineup h4{
+		font-size:40px;
+	}
+	div.teaser-lineup h5 a,
+	div.teaser-lineup h5 span{
+		font-size:35px;
+	}
+	div.teaser-lineup h6{
+		font-size:28px;
+		color:#231f20;
 	}
 }
 @media (max-width: 992px) { 
@@ -791,18 +679,6 @@ ul.menu-footer a:hover{
 	}
 	.navbar-default .navbar-brand{
 		left:-15px;
-	}
-	div.teaser-sam-29 h1{
-		font-size:62px;
-	}
-	div.teaser-dim-30 h1{
-		font-size:62px;
-	}
-	div.teaser-dim-30 h1 .teaser-date{
-		font-size:40px;
-	}
-	div.teaser-dim-30 p{
-		padding:0px 165px 0 460px;
 	}
 	div.custom-teaser-partners img{
 		margin:20px 0 30px 100px;

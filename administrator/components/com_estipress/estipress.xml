@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>Estipress</name>
+	<creationDate>2013-01-31</creationDate>
+	<author>Spark</author>
+	<authorEmail>info@sparkbuilt.com</authorEmail>
+	<authorUrl>http://estivole.sparkbuilt.com</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<version>1.0.0</version>
+	<description>Gestion des accréditations Estivale Open Air</description>
+
+	<install>
+  		<sql>
+    		<file charset="utf8" driver="mysql">install.mysql.sql</file>
+  		</sql>
+	</install> 
+
+	<scriptfile>install.php</scriptfile>
+
+	<administration>
+		<menu link="option=com_estipress" img="components/com_estipress/assets/images/estivole_icon.png">Estipress</menu>
+		<submenu>
+			<menu view="accred" img="components/com_estivole/assets/images/settings_icon.png">Liste des accréditations</menu>
+		</submenu>
+
+		<files folder="admin">
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>estipress.php</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>lib</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>index.html</filename>
+			<filename>install.mysql.sql</filename>
+		</files>  
+	</administration>
+	
+</extension>

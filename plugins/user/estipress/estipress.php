@@ -102,34 +102,16 @@
 				$form->removeField('media', 'estipress');
 			}
 			
-			if ($this->params->get('profile-require_typemedia', 1) > 0) {
-				$form->setFieldAttribute('type_media', 'required', $this->params->get('profile-require_typemedia') == 2, 'estipress');
+			if ($this->params->get('profile-require_phone', 1) > 0) {
+				$form->setFieldAttribute('phone', 'required', $this->params->get('profile-require_phone') == 2, 'estipress');
 			} else {
-				$form->removeField('type_media', 'estipress');
+				$form->removeField('phone', 'estipress');
 			}
 			
 			if ($this->params->get('profile-require_fonction', 1) > 0) {
 				$form->setFieldAttribute('fonction', 'required', $this->params->get('profile-require_fonction') == 2, 'estipress');
 			} else {
 				$form->removeField('fonction', 'estipress');
-			}
-			
-			if ($this->params->get('profile-require_tirage', 1) > 0) {
-				$form->setFieldAttribute('tirage', 'required', $this->params->get('profile-require_tirage') == 2, 'estipress');
-			} else {
-				$form->removeField('tirage', 'estipress');
-			}
-			
-			if ($this->params->get('profile-require_zonediff', 1) > 0) {
-				$form->setFieldAttribute('zone_diffusion', 'required', $this->params->get('profile-require_zonediff') == 2, 'estipress');
-			} else {
-				$form->removeField('zone_diffusion', 'estipress');
-			}
-			
-			if ($this->params->get('profile-require_sitemedia', 1) > 0) {
-				$form->setFieldAttribute('site_media', 'required', $this->params->get('profile-require_sitemedia') == 2, 'estipress');
-			} else {
-				$form->removeField('site_media', 'estipress');
 			}
 			
 			if ($this->params->get('profile-require_datespresence', 1) > 0) {
@@ -170,6 +152,12 @@
 				$form->removeField('media', 'estipress');
 			}
 			
+			if ($this->params->get('register-require_phone', 1) > 0) {
+				$form->setFieldAttribute('phone', 'required', $this->params->get('register-require_phone') == 2, 'estipress');
+			} else {
+				$form->removeField('phone', 'estipress');
+			}
+			
 			if ($this->params->get('register-require_typemedia', 1) > 0) {
 				$form->setFieldAttribute('type_media', 'required', $this->params->get('register-require_typemedia') == 2, 'estipress');
 			} else {
@@ -180,24 +168,6 @@
 				$form->setFieldAttribute('fonction', 'required', $this->params->get('register-require_fonction') == 2, 'estipress');
 			} else {
 				$form->removeField('fonction', 'estipress');
-			}
-			
-			if ($this->params->get('register-require_tirage', 1) > 0) {
-				$form->setFieldAttribute('tirage', 'required', $this->params->get('register-require_tirage') == 2, 'estipress');
-			} else {
-				$form->removeField('tirage', 'estipress');
-			}
-			
-			if ($this->params->get('register-require_zonediff', 1) > 0) {
-				$form->setFieldAttribute('zone_diffusion', 'required', $this->params->get('register-require_zonediff') == 2, 'estipress');
-			} else {
-				$form->removeField('zone_diffusion', 'estipress');
-			}
-			
-			if ($this->params->get('register-require_sitemedia', 1) > 0) {
-				$form->setFieldAttribute('site_media', 'required', $this->params->get('register-require_sitemedia') == 2, 'estipress');
-			} else {
-				$form->removeField('site_media', 'estipress');
 			}
 			
 			if ($this->params->get('register-require_datespresence', 1) > 0) {

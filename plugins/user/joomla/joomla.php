@@ -148,10 +148,10 @@ class PlgUserJoomla extends JPlugin
 						$lang->setLanguage($defaultLocale);
 					}
 
-					if (!$mail->Send())
-					{
-						$this->app->enqueueMessage(JText::_('JERROR_SENDING_EMAIL'), 'warning');
-					}
+					// if (!$mail->Send())
+					// {
+						// $this->app->enqueueMessage(JText::_('JERROR_SENDING_EMAIL'), 'warning');
+					// }
 				}
 			}
 		}

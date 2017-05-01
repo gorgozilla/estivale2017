@@ -54,8 +54,8 @@ $templateparams = $app->getTemplate(true)->params;
 	<!-- Tracking for Home, Prog, Baker, Gims, Tarifs, Intervalle -->
 	<?php if($pageId==101 || $pageId==140 || $pageId==142
 			|| $pageId==143 || $pageId==108
-			|| $pageId==176 || $pageId==177 || $pageId==178 || $pageId==179 || $pageId==180|| $pageId==182|| $pageId==183
-			|| $pageId==171 || $pageId==172 || $pageId==173 || $pageId==174 || $pageId==175 || $pageId==181|| $pageId==184
+			|| $pageId==176 || $pageId==177 || $pageId==178 || $pageId==179 || $pageId==186 || $pageId==190 || $pageId==192 || $pageId==194 || $pageId==196 || $pageId==198 || $pageId==200 || $pageId==202 || $pageId==204 || $pageId==206 || $pageId==208 || $pageId==210 || $pageId==212 || $pageId==214 || $pageId==216 || $pageId==222 || $pageId==124 || $pageId==131 || $pageId==161 || $pageId==162 || $pageId==163 || $pageId==181 || $pageId==183
+			|| $pageId==153 || $pageId==153 || $pageId==164 || $pageId==165 || $pageId==170 || $pageId==181|| $pageId==184 || $pageId==176 || $pageId==177 || $pageId==178 || $pageId==179 || $pageId==180 || $pageId==188|| $pageId==191|| $pageId==193 || $pageId==195 || $pageId==197 || $pageId==199 || $pageId==201 || $pageId==203|| $pageId==205|| $pageId==207 || $pageId==209 || $pageId==211 || $pageId==213 || $pageId==215 || $pageId==217 || $pageId==223 || $pageId==225 || $pageId==227
 			|| $pageId==159 || $pageId==160
 			|| $pageId==135 || $pageId==145){ ?>
 		<script> fbq('track', 'ViewContent'); </script>
@@ -124,110 +124,43 @@ $templateparams = $app->getTemplate(true)->params;
 			
 			<div id="contentarea">
 				<?php if($pageId==101 || $pageId==140 || $pageId==142){ ?>
-					<div class="teaser-sam-29 col-xs-12">
+					<div class="teaser-lineup col-xs-12">
+							<h1>LINE UP 2017</h1>
 						<?php if($lang=='fr-FR'){ ?>
-							<h1>SAM. 29.07.17</h1>
-								<div class="teaser">
-									<h2>IAM</h2>
-									<a href="index.php/fr/iam" class="addWishListEvent" style="height:369px;display:block;"></a>
-								</div>
+							<h2>
+								<a href="index.php/fr/prog/vendredi-28-juillet/asaf-avidan">ASAF AVIDAN</a><span class="white-span">/</span><a href="index.php/fr/prog/vendredi-28-juillet/patti-smith">PATTI SMITH</a>
+							</h2>
+							<h3>
+								<a href="index.php/fr/iam">IAM</a><span class="black-span">/</span><a href="index.php/fr/prog/samedi-29-juillet/milky-chance">MILKY CHANCE</a><span class="black-span">/</span><a href="index.php/fr/prog/samedi-29-juillet/k-s-choice">K'S CHOICE</a>
+							</h3>
+							<h4>
+								<a href="index.php/fr/amir">AMIR</a><span class="white-span">/</span><a href="index.php/fr/olivia-ruiz">OLIVIA RUIZ</a><span class="white-span">/</span><a href="index.php/fr/bastian-baker">BASTIAN BAKER</a><span class="white-span">/</span><a href="index.php/fr/shy-m">SHY’M</a><span class="white-span">/</span><a href="index.php/fr/maitre-gims">MAITRE GIMS</a>
+							</h4>
+							<h5>
+								<a href="index.php/fr/prog/vendredi-28-juillet/ida-mae">IDA MAE</a><span class="black-span">/</span><a href="index.php/fr/prog/vendredi-28-juillet/lucille-crew">LUCILLE CREW</a><span class="black-span">/</span><a href="index.php/fr/prog/lundi-31-juillet/giedre">GIEDRE</a><span class="black-span">/</span><a href="index.php/fr/prog/samedi-29-juillet/anna-kova">ANNA KOVA</a><span class="black-span">/</span><a href="index.php/fr/tete">TETE</a><span class="black-span">/</span><a href="index.php/fr/prog/dimanche-30-juillet/mark-kelly">MARK KELLY</a>
+							</h5>
+							<h6>
+								<a href="index.php/fr/prog/dimanche-30-juillet/jack-savoretti">JACK SAVORETTI</a><span class="white-span">/</span><a href="index.php/fr/prog/samedi-29-juillet/john-dear">JOHN DEAR</a><span class="white-span">/</span><a href="index.php/fr/prog/mardi-01-aout/get-in-the-car-simone">GET IN THE CAR SIMONE</a><span class="white-span">/</span><a href="index.php/fr/prog/mardi-01-aout/fensta">FENSTA</a><span class="white-span">/</span><a href="index.php/fr/prog/lundi-31-juillet/wintershome">WINTERSHOME</a>
+							</h6>
 						<?php }else{ ?>
-							<h1>SAM. 29.07.17</h1>
-								<div class="teaser">
-									<h2>IAM</h2>
-									<a href="index.php/de/iam" class="addWishListEvent" style="height:369px;display:block;"></a>
-								</div>
-						<?php } ?>
-					</div>
-					<div class="teaser-dim-30 col-xs-12">
-						<?php if($lang=='fr-FR'){ ?>
-							<h1>DIM. 30.07.17</h1>
-								<div class="teaser">
-									<h2>Olivia Ruiz</h2>
-									<a href="index.php/fr/prog/dimanche-30-juillet/olivia-ruiz" class="addWishListEvent">
-									<img src="<?php echo $this->baseurl.'/images/artists/olivia_ruiz.png'; ?>"  alt="Olivia Ruiz - Dimanche 30 juillet 2017" class="ruiz-teaser-image" />
-									</a>
-								</div>
-								<div class="teaser">
-									<h2 class="h2-3">Amir</h2>
-									<a href="index.php/fr/amir" class="addWishListEvent">
-									<img src="<?php echo $this->baseurl.'/images/artists/amir.png'; ?>"  alt="Amir - Dimanche 30 juillet 2017" class="amir-teaser-image" />
-									</a>
-								</div>
-								<div class="teaser">
-									<h2 class="h2-1">Tété</h2>
-									<a href="index.php/fr/prog/dimanche-30-juillet/tete" class="addWishListEvent">
-										<img src="<?php echo $this->baseurl.'/images/artists/tete.png'; ?>"  alt="Tété - Dimanche 30 juillet 2017" class="tete-teaser-image" />
-									</a>
-								</div>
-								<div class="teaser">
-									<h2 class="h2-2">Bastian Baker</h2>
-									<a href="index.php/fr/prog/dimanche-30-juillet/bastian-baker" class="addWishListEvent">
-										<img src="<?php echo $this->baseurl.'/images/artists/baker_transparent.png'; ?>"  alt="Bastian Baker - Dimanche 30 juillet 2017" class="baker-teaser-image" />
-									</a>
-								</div>
-						<?php }else{ ?>
-							<h1>SON. 30.07.17</h1>
-								<div class="teaser">
-									<h2>Olivia Ruiz</h2>
-									<a href="index.php/de/programm/sonntag-30-juli/olivia-ruiz-allemand" class="addWishListEvent">
-									<img src="<?php echo $this->baseurl.'/images/artists/olivia_ruiz.png'; ?>"  alt="Olivia Ruiz - Dimanche 30 juillet 2017" class="ruiz-teaser-image" />
-									</a>
-								</div>
-								<div class="teaser">
-									<h2 class="h2-3">Amir</h2>
-									<a href="index.php/de/amir-allemand" class="addWishListEvent">
-									<img src="<?php echo $this->baseurl.'/images/artists/amir.png'; ?>"  alt="Amir - Dimanche 30 juillet 2017" class="amir-teaser-image" />
-									</a>
-								</div>
-								<div class="teaser">
-									<h2 class="h2-1">Tété</h2>
-									<a href="index.php/de/programm/sonntag-30-juli/tete-allemand" class="addWishListEvent">
-										<img src="<?php echo $this->baseurl.'/images/artists/tete.png'; ?>"  alt="Tété - Dimanche 30 juillet 2017" class="tete-teaser-image" />
-									</a>
-								</div>
-								<div class="teaser">
-									<h2 class="h2-2">Bastian Baker</h2>
-									<a href="index.php/de/programm/sonntag-30-juli/bastian-baker-allemand" class="addWishListEvent">
-										<img src="<?php echo $this->baseurl.'/images/artists/baker_transparent.png'; ?>"  alt="Bastian Baker - Dimanche 30 juillet 2017" class="baker-teaser-image" />
-									</a>
-								</div>
+							<h2>
+								<a href="index.php/de/programm/freitag-28-juli/asaf-avidan">ASAF AVIDAN</a><span class="white-span">/</span><a href="index.php/de/programm/freitag-28-juli/patti-smith">PATTI SMITH</a>
+							</h2>
+							<h3>
+								<a href="index.php/de/iam">IAM</a><span class="black-span">/</span><a href="index.php/de/programm/samstag-29-juli/milky-chance">MILKY CHANCE</a><span class="black-span">/</span><a href="index.php/de/programm/samstag-29-juli/k-s-choice">K'S CHOICE</a>
+							</h3>
+							<h4>
+								<a href="index.php/de/amir-allemand">AMIR</a><span class="white-span">/</span><a href="index.php/de/olivia-ruiz-allemand">OLIVIA RUIZ</a><span class="white-span">/</span><a href="index.php/de/bastian-baker-allemand">BASTIAN BAKER</a><span class="white-span">/</span><a href="index.php/de/shy-m-allemand">SHY’M</a><span class="white-span">/</span><a href="index.php/de/maitre-gims-allemand">MAITRE GIMS</a>
+							</h4>
+							<h5>
+								<a href="index.php/de/programm/freitag-28-juli/ida-mae">IDA MAE</a><span class="black-span">/</span><a href="index.php/de/programm/freitag-28-juli/lucille-crew">LUCILLE CREW</a><span class="black-span">/</span><a href="index.php/de/programm/intervalle-montag-31-juli/giedre">GIEDRE</a><span class="black-span">/</span><a href="index.php/fr/prog/samedi-29-juillet/anna-kova">ANNA KOVA</a><span class="black-span">/</span><a href="index.php/de/tete-allemand">TETE</a><span class="black-span">/</span><a href="index.php/de/programm/sonntag-30-juli/mark-kelly">MARK KELLY</a>
+							</h5>
+							<h6>
+								<a href="index.php/de/programm/sonntag-30-juli/jack-savoretti">JACK SAVORETTI</a><span class="white-span">/</span><a href="index.php/de/programm/samstag-29-juli/john-dear">JOHN DEAR</a><span class="white-span">/</span><a href="index.php/de/programm/dienstag-01-august/get-in-the-car-simone">GET IN THE CAR SIMONE</a><span class="white-span">/</span><a href="index.php/fr/prog/mardi-01-aout/fensta">FENSTA</a><span class="white-span">/</span><a href="index.php/de/programm/intervalle-montag-31-juli/wintershome">WINTERSHOME</a>
+							</h6>						
 						<?php } ?>
 					</div>
 
-					<div class="teaser-lu-31 col-xs-12">
-						<?php if($lang=='fr-FR'){ ?>
-							<h1>L'INTERVALLE<br /><span class="teaser-date">LU. 31.07.17</span></h1>
-							<h2>SOIREE SPECIALE</h2>
-							<div class="teaser">
-								<h3>Shy'm</h3>
-								<a href="index.php/fr/prog/lundi-31-juillet/shy-m" class="addWishListEvent">
-								<img src="<?php echo $this->baseurl.'/images/artists/shym.png'; ?>"  alt="Shym - Lundi 31 juillet 2017" class="shym-teaser-image" />
-								</a>
-								</div>
-							<div class="teaser">
-								<h3 class="h2-2">Maître Gims</h3>
-								<a href="index.php/fr/prog/lundi-31-juillet/maitre-gims" class="addWishListEvent">
-								<img src="<?php echo $this->baseurl.'/images/artists/gims_transparent.png'; ?>"  alt="Maître Gims - Lundi 31 juillet 2017" class="gims-teaser-image" />
-								</a>
-							</div>
-						<?php }else{ ?>
-							<h1>INTERVALLE<br /><span class="teaser-date">MO. 31.07.17</span></h1>
-							<h2>ZUSATZABEND</h2>
-							<div class="teaser">
-								<h3>Shy'm</h3>
-								<a href="index.php/de/programm/intervalle-montag-31-juli/shy-m-allemand" class="addWishListEvent">
-								<img src="<?php echo $this->baseurl.'/images/artists/shym.png'; ?>"  alt="Shym - Lundi 31 juillet 2017" class="shym-teaser-image" />
-								</a>
-								</div>
-							<div class="teaser">
-								<h3 class="h2-2">Maître Gims</h3>
-								<a href="index.php/de/programm/intervalle-montag-31-juli/maitre-gims-allemand" class="addWishListEvent">
-								<img src="<?php echo $this->baseurl.'/images/artists/gims_transparent.png'; ?>"  alt="Maître Gims - Lundi 31 juillet 2017" class="gims-teaser-image" />
-								</a>
-							</div>
-						<?php } ?>
-					</div>
 					<div class="teaser-price col-md-8 col-xs-12">
 						<?php if($lang=='fr-FR'){ ?>
 							<h2>BILLETS ET ABONNEMENTS</h2>
@@ -317,6 +250,7 @@ $templateparams = $app->getTemplate(true)->params;
 					<?php } ?>
 				<?php }else{ ?>
 				<div class="col-xs-12 content">
+				<jdoc:include type="message" />
 					<jdoc:include type="component" />
 				</div>
 				<?php } ?>
