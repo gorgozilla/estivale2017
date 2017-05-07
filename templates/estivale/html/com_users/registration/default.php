@@ -22,6 +22,7 @@ function generateRandomString($length = 10) {
     return $randomString;
 }
 
+$lang = JFactory::getLanguage()->getTag();
 ?>
 
 <script>
@@ -43,11 +44,14 @@ function generateRandomString($length = 10) {
 	});
 </script>
 <div class="registration<?php echo $this->pageclass_sfx?>">
-			<h1><?php echo $this->escape($this->params->get('page_heading')); ?></h1>
-	<p>
-Le service de presse de l'Estivale vous communiquera l'acceptation ou le refus de votre demande par mail.</p>
-
-<p>En cas de problème, ou pour tout renseignement complémentaire, n'hésitez pas à nous contacter par courriel à presse(at)estivale.ch</p>
+	<h1><?php echo $this->escape($this->params->get('page_heading')); ?></h1>
+	<?php if($lang=='fr-FR'){ ?>
+		<p>Le service de presse de l'Estivale vous communiquera l'acceptation ou le refus de votre demande par mail.</p>
+		<p>En cas de problème, ou pour tout renseignement complémentaire, n'hésitez pas à nous contacter par courriel à presse(at)estivale.ch</p>
+	<?php }else{ ?>
+		<p>Die Presseabteilung wird Ihnen den jeweiligen Entscheid bezüglich Ihrer Anfragen per Mail kommunizieren.</p>
+		<p>Falls Probleme auftreten sollten oder Sie Zusatzinformationen benötigen, können Sie uns via presse(at)estivale.ch kontaktieren.</p>
+	<?php } ?>
 
 	<form id="member-registration" action="<?php echo JRoute::_('index.php?option=com_users&task=registration.register'); ?>" method="post" class="form-validate" enctype="multipart/form-data">
 		<?php // Iterate through the form fieldsets and display each one. ?>

@@ -134,7 +134,7 @@ $templateparams = $app->getTemplate(true)->params;
 								<a href="index.php/fr/iam">IAM</a><span class="black-span">/</span><a href="index.php/fr/prog/samedi-29-juillet/milky-chance">MILKY CHANCE</a><span class="black-span">/</span><a href="index.php/fr/prog/samedi-29-juillet/k-s-choice">K'S CHOICE</a>
 							</h3>
 							<h4>
-								<a href="index.php/fr/amir">AMIR</a><span class="white-span">/</span><a href="index.php/fr/olivia-ruiz">OLIVIA RUIZ</a><span class="white-span">/</span><a href="index.php/fr/bastian-baker">BASTIAN BAKER</a><span class="white-span">/</span><a href="index.php/fr/shy-m">SHY’M</a><span class="white-span">/</span><a href="index.php/fr/maitre-gims">MAITRE GIMS</a>
+								<a href="index.php/fr/amir">AMIR</a><span class="white-span">/</span><a href="index.php/fr/olivia-ruiz">OLIVIA RUIZ</a><span class="white-span">/</span><a href="index.php/fr/bastian-baker">BASTIAN BAKER</a><span class="white-span">/</span><a href="index.php/fr/maitre-gims">MAITRE GIMS</a>
 							</h4>
 							<h5>
 								<a href="index.php/fr/prog/vendredi-28-juillet/ida-mae">IDA MAE</a><span class="black-span">/</span><a href="index.php/fr/prog/vendredi-28-juillet/lucille-crew">LUCILLE CREW</a><span class="black-span">/</span><a href="index.php/fr/prog/lundi-31-juillet/giedre">GIEDRE</a><span class="black-span">/</span><a href="index.php/fr/prog/samedi-29-juillet/anna-kova">ANNA KOVA</a><span class="black-span">/</span><a href="index.php/fr/tete">TETE</a><span class="black-span">/</span><a href="index.php/fr/prog/dimanche-30-juillet/mark-kelly">MARK KELLY</a>
@@ -150,7 +150,7 @@ $templateparams = $app->getTemplate(true)->params;
 								<a href="index.php/de/iam">IAM</a><span class="black-span">/</span><a href="index.php/de/programm/samstag-29-juli/milky-chance">MILKY CHANCE</a><span class="black-span">/</span><a href="index.php/de/programm/samstag-29-juli/k-s-choice">K'S CHOICE</a>
 							</h3>
 							<h4>
-								<a href="index.php/de/amir-allemand">AMIR</a><span class="white-span">/</span><a href="index.php/de/olivia-ruiz-allemand">OLIVIA RUIZ</a><span class="white-span">/</span><a href="index.php/de/bastian-baker-allemand">BASTIAN BAKER</a><span class="white-span">/</span><a href="index.php/de/shy-m-allemand">SHY’M</a><span class="white-span">/</span><a href="index.php/de/maitre-gims-allemand">MAITRE GIMS</a>
+								<a href="index.php/de/amir-allemand">AMIR</a><span class="white-span">/</span><a href="index.php/de/olivia-ruiz-allemand">OLIVIA RUIZ</a><span class="white-span">/</span><a href="index.php/de/bastian-baker-allemand">BASTIAN BAKER</a><span class="white-span">/</span><a href="index.php/de/maitre-gims-allemand">MAITRE GIMS</a>
 							</h4>
 							<h5>
 								<a href="index.php/de/programm/freitag-28-juli/ida-mae">IDA MAE</a><span class="black-span">/</span><a href="index.php/de/programm/freitag-28-juli/lucille-crew">LUCILLE CREW</a><span class="black-span">/</span><a href="index.php/de/programm/intervalle-montag-31-juli/giedre">GIEDRE</a><span class="black-span">/</span><a href="index.php/fr/prog/samedi-29-juillet/anna-kova">ANNA KOVA</a><span class="black-span">/</span><a href="index.php/de/tete-allemand">TETE</a><span class="black-span">/</span><a href="index.php/de/programm/sonntag-30-juli/mark-kelly">MARK KELLY</a>
