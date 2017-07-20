@@ -52,6 +52,7 @@ class EstipressControllerAccred extends JControllerAdmin
 	
 	public function exportAccred()
 	{
+		
 		$app      = JFactory::getApplication();
 		$this->accred = $this->model->listItems();
 		
@@ -62,20 +63,20 @@ class EstipressControllerAccred extends JControllerAdmin
 		$objPHPExcel->getProperties()->setCreator("Estivale Open Air")
 									 ->setLastModifiedBy("Estivole")
 									 ->setTitle("Export Estipress")
-									 ->setSubject("Export des accrdéitations Estipress");
+									 ->setSubject("Export des accréditations Estipress");
 									 
 		// Rename worksheet
 		$objPHPExcel->getActiveSheet()->setTitle("Export");
 
 		// Add some data
 		$objPHPExcel->setActiveSheetIndex(0)
-					->setCellValue("A1", "Estivale Open Air 2016 - Liste des accréditations")
+					->setCellValue("A1", "Estivale Open Air 2017 - Liste des accréditations")
 					->setCellValue("A3", "Nom")
 					->setCellValue("B3", "Email")
-					->setCellValue("C3", "Média")
-					->setCellValue("D3", "Type média")
+					->setCellValue("C3", "Tél.")
+					->setCellValue("D3", "Média")
 					->setCellValue("E3", "Fonction")
-					->setCellValue("F3", "Zone diffusion")
+					->setCellValue("F3", "Demande d'interviews")
 					->setCellValue("G3", "Dates présence");
 		
 		// Add data
@@ -87,13 +88,17 @@ class EstipressControllerAccred extends JControllerAdmin
 				$dates_presence .= $userProfile->estipress['dates_presence'][$x].', '; 
 			}
 			
+			for($x=0; $x<count($userProfile->estipress['demande_interviews']); $x++){ 
+				$interviews .= $userProfile->estipress['demande_interviews'][$x].', '; 
+			}
+			
 			$objPHPExcel->getActiveSheet()
 						->setCellValue("A".$i, $userProfile->estipress['firstname'].' '.$userProfile->estipress['lastname'])
 						->setCellValue("B".$i, $userProfile->estipress['email'])
-						->setCellValue("C".$i, $userProfile->estipress['media'])
-						->setCellValue("D".$i, $userProfile->estipress['type_media'])
+						->setCellValue("C".$i, $userProfile->estipress['phone'])
+						->setCellValue("D".$i, $userProfile->estipress['media'])
 						->setCellValue("E".$i, $userProfile->estipress['fonction'])
-						->setCellValue("F".$i, $userProfile->estipress['zone_diffusion'])
+						->setCellValue("F".$i, $interviews)
 						->setCellValue("G".$i, $dates_presence);
 		}
 		// Redirect output to a client’s web browser (Excel2007)

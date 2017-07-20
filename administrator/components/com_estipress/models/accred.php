@@ -114,7 +114,7 @@ class EstipressModelAccred extends JModelList
 		
 		$day_presence= $db->escape($this->getState('filter.day_presence'));
 		if (!empty($day_presence)) {
-			$query->where('b.user_id IN (SELECT b.user_id FROM g51bu_estipress_accred as b,g51bu_users as u,g51bu_user_profiles as p WHERE b.user_id=p.user_id AND b.user_id=u.id AND (p.profile_value LIKE \'%'.$day_presence.'%\' AND p.profile_key=\'estipress.dates_presence\') group by b.user_id)');
+			$query->where('b.user_id IN (SELECT b.user_id FROM #__estipress_accred as b,#__users as u,#__user_profiles as p WHERE b.user_id=p.user_id AND b.user_id=u.id AND (p.profile_value LIKE \'%'.$day_presence.'%\' AND p.profile_key=\'estipress.dates_presence\') group by b.user_id)');
 		}
 		
 		$query->group('b.user_id');
@@ -157,7 +157,7 @@ class EstipressModelAccred extends JModelList
 		$query = $this->_buildQuery();  
 		$query = $this->_buildWhere($query);
 		if($sex != null){
-			$query->where('b.user_id IN (SELECT b.user_id FROM g51bu_estipress_accred as b,g51bu_users as u,g51bu_user_profiles as p WHERE b.user_id=p.user_id AND b.user_id=u.id AND (p.profile_value=\'"'.$sex.'"\' AND p.profile_key=\'profilestipress.sex\') group by b.user_id)');
+			$query->where('b.user_id IN (SELECT b.user_id FROM #__estipress_accred as b,#__users as u,#__user_profiles as p WHERE b.user_id=p.user_id AND b.user_id=u.id AND (p.profile_value=\'"'.$sex.'"\' AND p.profile_key=\'profilestipress.sex\') group by b.user_id)');
 		}
 		//echo $query;
 		$list = $this->_getList($query);

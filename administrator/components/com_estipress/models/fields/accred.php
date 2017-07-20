@@ -33,6 +33,7 @@ class JFormFieldAccred extends JFormFieldList
 	public function getOptionsDays()
 	{
 		$arr = array(
+			JHTML::_('select.option', '28 juillet', JText::_('28 juillet') ),
 			JHTML::_('select.option', '29 juillet', JText::_('29 juillet') ),
 			JHTML::_('select.option', '30 juillet', JText::_('30 juillet') ),
 			JHTML::_('select.option', '31 juillet', JText::_('31 juillet') ),

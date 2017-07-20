@@ -36,33 +36,6 @@
 				<option value="31 juillet">31 juillet</option>
 				<option value="01 août">01 août</option>
 			</field>
-			<field name="demande_interviews" type="checkboxes"
-				description="PLG_USER_ESTIPRESS_FIELD_DEMINTERVIEWS_DESC"
-				label="PLG_USER_ESTIPRESS_FIELD_DEMINTERVIEWS_LABEL">
-				<option value="AMIR">AMIR</option>
-				<option value="ANNA KOVA">ANNA KOVA</option>
-				<option value="ASAF AVIDAN">ASAF AVIDAN</option>
-				<option value="BASTIAN BAKER">BASTIAN BAKER</option>
-				<option value="BOOSTEE">BOOSTEE</option>
-				<option value="DAMSO">DAMSO</option>
-				<option value="FENSTA">FENSTA</option>
-				<option value="FOREST POOKY">FOREST POOKY</option>
-				<option value="GET IN THE CAR SIMONE">GET IN THE CAR SIMONE</option>
-				<option value="GIEDRE">GIEDRE</option>
-				<option value="IAM">IAM</option>
-				<option value="IDA MAE">IDA MAE</option>
-				<option value="JACK SAVORETTI">JACK SAVORETTI</option>
-				<option value="JOHN DEAR">JOHN DEAR</option>
-				<option value="K'S CHOICE">K'S CHOICE</option>
-				<option value="LUCILLE CREW">LUCILLE CREW</option>
-				<option value="MAITRE GIMS">MAITRE GIMS</option>
-				<option value="MARK KELLY">MARK KELLY</option>
-				<option value="MILKY CHANCE">MILKY CHANCE</option>
-				<option value="OLIVIA RUIZ">OLIVIA RUIZ</option>
-				<option value="PATTI SMITH">PATTI SMITH</option>
-				<option value="TETE">TETE</option>
-				<option value="WINTERSHOME">WINTERSHOME</option>
-			</field>
 		</fieldset>
 	</fields>
 </form>

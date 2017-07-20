@@ -49,7 +49,7 @@ function tableOrdering( order, dir, task )
 				</div>
 				<div class="btn-group pull-right hidden-phone">
 					<select name="filter_day_presence" class="inputbox" onchange="this.form.submit()">
-						<option value=""> - Select day - </option>
+						<option value=""> - Sélectionner un jour - </option>
 						<?php echo JHtml::_('select.options', $daysOptions, 'value', 'text', $this->state->get('filter.day_presence'));?>
 					</select>
 					<label for="limit" class="element-invisible"><?php echo JText::_('JFIELD_PLG_SEARCH_SEARCHLIMIT_DESC');?></label>
@@ -73,13 +73,7 @@ function tableOrdering( order, dir, task )
 							<?php echo JText::_('Média'); ?>
 						</th>
 						<th class="left">
-							<?php echo JText::_('Type média'); ?>
-						</th>
-						<th class="left">
 							<?php echo JText::_('Fonction'); ?>
-						</th>
-						<th class="left">
-							<?php echo JText::_( 'Zone diffusion' ); ?>
 						</th>
 						<th class="left">
 							<?php echo JText::_( 'Dates présence' ); ?>
@@ -118,13 +112,7 @@ function tableOrdering( order, dir, task )
 							<?php if($userEstipress->estipress['site_media']!=''){ echo '<a href=http://'.$userEstipress->estipress['site_media'].'>'; } echo JText::_($userEstipress->estipress['media']); if($userEstipress->estipress['site_media']!=''){ echo '</a>'; } ?>
 						</td>
 						<td class="left">
-							<?php echo JText::_($userEstipress->estipress['type_media']); ?>
-						</td>
-						<td class="left">
 							<?php echo JText::_($userEstipress->estipress['fonction']); ?>
-						</td>
-						<td class="left">
-							<?php echo JText::_($userEstipress->estipress['zone_diffusion']); ?>
 						</td>
 						<td class="left">
 							<?php for($i=0; $i<count($userEstipress->estipress['dates_presence']); $i++){ echo $userEstipress->estipress['dates_presence'][$i].'<br />'; } ?>
